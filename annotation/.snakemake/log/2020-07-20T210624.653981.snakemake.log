@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	stringtie_merge
+	67	stringtie_short_1st
+	67	stringtie_short_2nd
+	136
+
+[Mon Jul 20 21:06:24 2020]
+Job 87: First stringtie run...
+
+[Mon Jul 20 21:06:24 2020]
+Error in rule stringtie_short_1st:
+    jobid: 87
+    output: /dilithium/Data/gmoney/analysis/moth/annotation/stringtie2_masked/stringtie2/stringtie2_1st/SRX702725_masked_primary/SRX702725_masked_primary_ST2_1st.gtf
+
+RuleException:
+CalledProcessError in line 40 of /home/gmoney/Code/moth/moth/annotation/run_stringtie:
+Command ' set -euo pipefail;  
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/masked/SRX702725_masked_primary.bam --conservative -o /dilithium/Data/gmoney/analysis/moth/annotation/stringtie2_masked/stringtie2/stringtie2_1st/SRX702725_masked_primary/SRX702725_masked_primary_ST2_1st.gtf -p 48 -v ' returned non-zero exit status 1.
+  File "/home/gmoney/Code/moth/moth/annotation/run_stringtie", line 40, in __rule_stringtie_short_1st
+  File "/home/roham/miniconda3/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/gmoney/Code/moth/moth/annotation/.snakemake/log/2020-07-20T210624.653981.snakemake.log

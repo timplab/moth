@@ -4,8 +4,8 @@ datadir=/kyber/Data/Nanopore/Analysis/gmoney/moth/annotation
 if [ $1 == repeats ] ; then
 	mkdir -p $datadir/repeats
 	cd $datadir/repeats
-	~/repos/RepeatModeler-open-1.0.11/BuildDatabase -name moth -engine ncbi $datadir/wt_moth_corrected_scaffolds.fasta
-	~/repos/RepeatModeler-open-1.0.11/RepeatModeler -pa 36 -engine ncbi -database moth 2>&1 | tee repeatmodeler.log
+#	~/repos/RepeatModeler-open-1.0.11/BuildDatabase -name moth -engine ncbi /kyber/Data/Nanopore/Analysis/gmoney/moth/hiC/phase_scaffolds/correction2_moth_scaffolds.fasta
+	~/repos/RepeatModeler-open-1.0.11/RepeatModeler -pa 36 -engine ncbi -database moth -pa 32 2>&1 | tee repeatmodeler.log
 fi 
 
 if [ $1 == busco ] ; then
@@ -15,15 +15,15 @@ if [ $1 == busco ] ; then
 fi
 
 if [ $1 == maker_prep ] ; then
-	mkdir -p $datadir/maker
+#	mkdir -p $datadir/maker
 	cd $datadir/maker
 	##make control files for maker
-	maker -CTL
+	/home/yfan/software/maker/bin/maker -CTL
 fi
 
 if [ $1 == maker_contigs ] ; then
 	cd $datadir/maker
-	maker -c 36 -f -g $datadir/canu_pilon/candida_nivariensis_canu.pilon.6.fasta \
+	nice -5 /home/yfan/software/maker/bin/maker -c 36 -f -g /kyber/Data/Nanopore/Analysis/gmoney/moth/hiC/phase_scaffolds/correction2_moth_scaffolds.fasta \
 	-base contigs \
 	$datadir/maker/maker_opts.ctl $datadir/maker/maker_bopts.ctl $datadir/maker/maker_exe.ctl
 fi

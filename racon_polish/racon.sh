@@ -2,8 +2,8 @@
 # Building a large index
 if [ "$1" == "index" ]; then
 bowtie2-build --large-index canu_moth_polished_genome.fa /home/ubuntu/illumina/alignment/moth_canu
-bowtie2-build --large-index wt_moth_polished_genome.fa /home/ubuntu/illumina/alignment/moth_wt
-bowtie2-build --large-index flye_moth_polished_genome.fa /home/ubuntu/illumina/alignment/moth_flye
+#bowtie2-build --large-index wt_moth_polished_genome.fa /home/ubuntu/illumina/alignment/moth_wt
+#bowtie2-build --large-index flye_moth_polished_genome.fa /home/ubuntu/illumina/alignment/moth_flye
 fi
 
 # Inspecting the entire lambda virus index (large index)
@@ -14,10 +14,10 @@ if [ "$1" == "inspect" ]; then
 fi
 # Aligning paired reads #181012-mothleg_S1_L001_R1_001.fastq  181012-mothleg_S1_L001_R2_001.fastq
 if [ "$1" == "align" ]; then
-	bowtie2 -x /home/ubuntu/illumina/alignment/moth_canu -1 /home/ubuntu/illumina/181012-mothleg_S1_L001_R1_001.fastq -2 /home/ubuntu/illumina/181012-mothleg_S1_L001_R2_001.fastq
+#	bowtie2 -x /home/ubuntu/illumina/alignment/moth_canu -1 /home/ubuntu/illumina/181012-mothleg_S1_L001_R1_001.fastq -2 /home/ubuntu/illumina/181012-mothleg_S1_L001_R2_001.fastq
 	bowtie2 -x /home/ubuntu/illumina/alignment/wt_canu -1 /home/ubuntu/illumina/181012-mothleg_S1_L001_R1_001.fastq -2 /home/ubuntu/
 illumina/181012-mothleg_S1_L001_R2_001.fastq
-	bowtie2 -x /home/ubuntu/illumina/alignment/flye_canu -1 /home/ubuntu/illumina/181012-mothleg_S1_L001_R1_001.fastq -2 /home/ubuntu/
+#	bowtie2 -x /home/ubuntu/illumina/alignment/flye_canu -1 /home/ubuntu/illumina/181012-mothleg_S1_L001_R1_001.fastq -2 /home/ubuntu/
 illumina/181012-mothleg_S1_L001_R2_001.fastq
 fi
 
@@ -64,3 +64,23 @@ if [ "$1" == "racon" ]; then
 	#        input file in FASTA/FASTQ format (can be compressed with gzip)
 	#        containing sequences which will be corrected
 fi
+
+# another round of polishing post scaffolding
+if [ "$1" == "racon2" ]; then
+	python ./racon_change_names.py /kyber/Data/Nanopore/projects/moth/raw_data/illumina/181012-mothleg_S1_L001_R1_001.fastq /kyber/Data/Nanopore/projects/moth/raw_data/illumina/181012-mothleg_S1_L001_R2_001.fastq > /uru/Data/Nanopore/projects/moth/polishing/racon_fastq/racon_ill_moth.fastq
+        minimap2 -t 50 /uru/Data/Nanopore/projects/moth/reference/correction2_moth_scaffolds.fasta /uru/Data/Nanopore/projects/moth/polishing/racon_fastq/racon_ill_moth.fastq > /uru/Data/Nanopore/projects/moth/polishing/alignments/illumina_scaffolds_1.paf
+
+	 racon -t 50 /uru/Data/Nanopore/projects/moth/polishing/racon_fastq/racon_ill_moth.fastq /uru/Data/Nanopore/projects/moth/polishing/alignments/illumina_scaffolds_1.paf /uru/Data/Nanopore/projects/moth/reference/correction2_moth_scaffolds.fasta > /uru/Data/Nanopore/projects/moth/polishing/moth_scaffolds_racon_1.fa
+	~/repos/mummer-4.0.0beta2/nucmer -p nucmer1 /uru/Data/Nanopore/projects/moth/reference/correction2_moth_scaffolds.fasta /uru/Data/Nanopore/projects/moth/polishing/moth_scaffolds_racon_1.fa > /uru/Data/Nanopore/projects/moth/polishing/scaffolds_racon1.delta
+	~/repos/mummer-4.0.0beta2/show-snps -C -T -r nucmer1.delta > /uru/Data/Nanopore/projects/moth/polishing/scaffolds_racon_1_snps
+fi
+
+
+if [ "$1" == "racon3" ]; then
+        minimap2 -t 50 /uru/Data/Nanopore/projects/moth/polishing/racon_changes/moth_scaffolds_racon_1.fa /uru/Data/Nanopore/projects/moth/polishing/racon_fastq/racon_ill_moth.fastq > /uru/Data/Nanopore/projects/moth/polishing/alignments/illumina_scaffolds_2.paf
+
+         racon -t 50 /uru/Data/Nanopore/projects/moth/polishing/racon_fastq/racon_ill_moth.fastq /uru/Data/Nanopore/projects/moth/polishing/alignments/illumina_scaffolds_2.paf /uru/Data/Nanopore/projects/moth/polishing/racon_changes/moth_scaffolds_racon_1.fa > /uru/Data/Nanopore/projects/moth/polishing/moth_scaffolds_racon_2.fa
+        ~/repos/mummer-4.0.0beta2/nucmer -p  /uru/Data/Nanopore/projects/moth/polishing/nucmer2 /uru/Data/Nanopore/projects/moth/polishing/racon_changes/moth_scaffolds_racon_1.fa /uru/Data/Nanopore/projects/moth/polishing/moth_scaffolds_racon_2.fa > /uru/Data/Nanopore/projects/moth/polishing/scaffolds_racon2.delta
+        ~/repos/mummer-4.0.0beta2/show-snps -C -T -r /uru/Data/Nanopore/projects/moth/polishing/nucmer2.delta > /uru/Data/Nanopore/projects/moth/polishing/scaffolds_racon_2_snps
+fi
+

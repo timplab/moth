@@ -1,0 +1,1371 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	stringtie_merge
+	67	stringtie_short_1st
+	67	stringtie_short_2nd
+	136
+
+[Tue Mar 24 13:03:26 2020]
+Job 83: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702725.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702725/SRX702725_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:09:12 2020]
+Finished job 83.
+1 of 136 steps (0.74%) done
+
+[Tue Mar 24 13:09:12 2020]
+Job 130: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702721.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702721/SRX702721_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:12:31 2020]
+Finished job 130.
+2 of 136 steps (1%) done
+
+[Tue Mar 24 13:12:31 2020]
+Job 111: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702719.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702719/SRX702719_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:15:06 2020]
+Finished job 111.
+3 of 136 steps (2%) done
+
+[Tue Mar 24 13:15:06 2020]
+Job 85: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702726.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702726/SRX702726_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:17:46 2020]
+Finished job 85.
+4 of 136 steps (3%) done
+
+[Tue Mar 24 13:17:46 2020]
+Job 121: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702722.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702722/SRX702722_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:20:31 2020]
+Finished job 121.
+5 of 136 steps (4%) done
+
+[Tue Mar 24 13:20:31 2020]
+Job 100: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702724.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702724/SRX702724_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:22:33 2020]
+Finished job 100.
+6 of 136 steps (4%) done
+
+[Tue Mar 24 13:22:33 2020]
+Job 120: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702723.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702723/SRX702723_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:24:27 2020]
+Finished job 120.
+7 of 136 steps (5%) done
+
+[Tue Mar 24 13:24:27 2020]
+Job 110: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702720.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702720/SRX702720_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:26:43 2020]
+Finished job 110.
+8 of 136 steps (6%) done
+
+[Tue Mar 24 13:26:43 2020]
+Job 69: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702715.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702715/SRX702715_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:28:46 2020]
+Finished job 69.
+9 of 136 steps (7%) done
+
+[Tue Mar 24 13:28:46 2020]
+Job 102: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702712.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702712/SRX702712_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:30:29 2020]
+Finished job 102.
+10 of 136 steps (7%) done
+
+[Tue Mar 24 13:30:29 2020]
+Job 127: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702710.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702710/SRX702710_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:32:25 2020]
+Finished job 127.
+11 of 136 steps (8%) done
+
+[Tue Mar 24 13:32:25 2020]
+Job 75: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702733.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702733/SRX702733_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:34:25 2020]
+Finished job 75.
+12 of 136 steps (9%) done
+
+[Tue Mar 24 13:34:25 2020]
+Job 87: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702717.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702717/SRX702717_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:35:59 2020]
+Finished job 87.
+13 of 136 steps (10%) done
+
+[Tue Mar 24 13:35:59 2020]
+Job 101: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702711.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702711/SRX702711_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:37:33 2020]
+Finished job 101.
+14 of 136 steps (10%) done
+
+[Tue Mar 24 13:37:33 2020]
+Job 86: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702727.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702727/SRX702727_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:39:12 2020]
+Finished job 86.
+15 of 136 steps (11%) done
+
+[Tue Mar 24 13:39:12 2020]
+Job 108: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702706.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702706/SRX702706_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:40:50 2020]
+Finished job 108.
+16 of 136 steps (12%) done
+
+[Tue Mar 24 13:40:50 2020]
+Job 117: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702709.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702709/SRX702709_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:42:14 2020]
+Finished job 117.
+17 of 136 steps (12%) done
+
+[Tue Mar 24 13:42:14 2020]
+Job 71: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702731.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702731/SRX702731_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:43:53 2020]
+Finished job 71.
+18 of 136 steps (13%) done
+
+[Tue Mar 24 13:43:53 2020]
+Job 84: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702701.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702701/SRX702701_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:45:17 2020]
+Finished job 84.
+19 of 136 steps (14%) done
+
+[Tue Mar 24 13:45:17 2020]
+Job 96: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702718.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702718/SRX702718_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:46:33 2020]
+Finished job 96.
+20 of 136 steps (15%) done
+
+[Tue Mar 24 13:46:33 2020]
+Job 89: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702703.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702703/SRX702703_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:47:53 2020]
+Finished job 89.
+21 of 136 steps (15%) done
+
+[Tue Mar 24 13:47:53 2020]
+Job 99: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702728.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702728/SRX702728_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:49:19 2020]
+Finished job 99.
+22 of 136 steps (16%) done
+
+[Tue Mar 24 13:49:19 2020]
+Job 112: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702702.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702702/SRX702702_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:50:39 2020]
+Finished job 112.
+23 of 136 steps (17%) done
+
+[Tue Mar 24 13:50:39 2020]
+Job 125: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702730.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702730/SRX702730_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:51:56 2020]
+Finished job 125.
+24 of 136 steps (18%) done
+
+[Tue Mar 24 13:51:56 2020]
+Job 122: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702729.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702729/SRX702729_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:53:04 2020]
+Finished job 122.
+25 of 136 steps (18%) done
+
+[Tue Mar 24 13:53:04 2020]
+Job 105: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702714.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702714/SRX702714_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:53:58 2020]
+Finished job 105.
+26 of 136 steps (19%) done
+
+[Tue Mar 24 13:53:58 2020]
+Job 107: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702707.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702707/SRX702707_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:54:57 2020]
+Finished job 107.
+27 of 136 steps (20%) done
+
+[Tue Mar 24 13:54:57 2020]
+Job 78: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702708.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702708/SRX702708_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:55:53 2020]
+Finished job 78.
+28 of 136 steps (21%) done
+
+[Tue Mar 24 13:55:53 2020]
+Job 135: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702705.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702705/SRX702705_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:56:52 2020]
+Finished job 135.
+29 of 136 steps (21%) done
+
+[Tue Mar 24 13:56:52 2020]
+Job 79: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702716.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702716/SRX702716_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:57:41 2020]
+Finished job 79.
+30 of 136 steps (22%) done
+
+[Tue Mar 24 13:57:41 2020]
+Job 94: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702732.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702732/SRX702732_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:58:36 2020]
+Finished job 94.
+31 of 136 steps (23%) done
+
+[Tue Mar 24 13:58:36 2020]
+Job 80: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702713.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702713/SRX702713_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 13:59:21 2020]
+Finished job 80.
+32 of 136 steps (24%) done
+
+[Tue Mar 24 13:59:21 2020]
+Job 109: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702704.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702704/SRX702704_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:00:03 2020]
+Finished job 109.
+33 of 136 steps (24%) done
+
+[Tue Mar 24 14:00:03 2020]
+Job 124: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341660.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341660/ERX341660_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:00:33 2020]
+Finished job 124.
+34 of 136 steps (25%) done
+
+[Tue Mar 24 14:00:33 2020]
+Job 103: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341659.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341659/ERX341659_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:01:05 2020]
+Finished job 103.
+35 of 136 steps (26%) done
+
+[Tue Mar 24 14:01:05 2020]
+Job 88: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341665.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341665/ERX341665_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:01:32 2020]
+Finished job 88.
+36 of 136 steps (26%) done
+
+[Tue Mar 24 14:01:32 2020]
+Job 72: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341658.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341658/ERX341658_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:02:00 2020]
+Finished job 72.
+37 of 136 steps (27%) done
+
+[Tue Mar 24 14:02:00 2020]
+Job 104: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341661.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341661/ERX341661_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:02:25 2020]
+Finished job 104.
+38 of 136 steps (28%) done
+
+[Tue Mar 24 14:02:25 2020]
+Job 119: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090056.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090056/ERX1090056_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:02:45 2020]
+Finished job 119.
+39 of 136 steps (29%) done
+
+[Tue Mar 24 14:02:45 2020]
+Job 76: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341664.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341664/ERX341664_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:03:07 2020]
+Finished job 76.
+40 of 136 steps (29%) done
+
+[Tue Mar 24 14:03:07 2020]
+Job 92: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341662.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341662/ERX341662_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:03:31 2020]
+Finished job 92.
+41 of 136 steps (30%) done
+
+[Tue Mar 24 14:03:31 2020]
+Job 134: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090057.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090057/ERX1090057_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:03:48 2020]
+Finished job 134.
+42 of 136 steps (31%) done
+
+[Tue Mar 24 14:03:48 2020]
+Job 106: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341663.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341663/ERX341663_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:04:10 2020]
+Finished job 106.
+43 of 136 steps (32%) done
+
+[Tue Mar 24 14:04:10 2020]
+Job 93: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090058.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090058/ERX1090058_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:04:28 2020]
+Finished job 93.
+44 of 136 steps (32%) done
+
+[Tue Mar 24 14:04:28 2020]
+Job 74: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090055.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090055/ERX1090055_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:04:44 2020]
+Finished job 74.
+45 of 136 steps (33%) done
+
+[Tue Mar 24 14:04:44 2020]
+Job 81: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090059.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090059/ERX1090059_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:05:01 2020]
+Finished job 81.
+46 of 136 steps (34%) done
+
+[Tue Mar 24 14:05:01 2020]
+Job 91: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339204.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339204/SRX1339204_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:05:19 2020]
+Finished job 91.
+47 of 136 steps (35%) done
+
+[Tue Mar 24 14:05:19 2020]
+Job 131: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090060.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090060/ERX1090060_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:05:31 2020]
+Finished job 131.
+48 of 136 steps (35%) done
+
+[Tue Mar 24 14:05:31 2020]
+Job 132: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090061.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090061/ERX1090061_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:05:42 2020]
+Finished job 132.
+49 of 136 steps (36%) done
+
+[Tue Mar 24 14:05:42 2020]
+Job 123: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339205.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339205/SRX1339205_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:05:55 2020]
+Finished job 123.
+50 of 136 steps (37%) done
+
+[Tue Mar 24 14:05:55 2020]
+Job 128: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339216.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339216/SRX1339216_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:06:09 2020]
+Finished job 128.
+51 of 136 steps (38%) done
+
+[Tue Mar 24 14:06:09 2020]
+Job 115: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339224.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339224/SRX1339224_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:06:21 2020]
+Finished job 115.
+52 of 136 steps (38%) done
+
+[Tue Mar 24 14:06:21 2020]
+Job 73: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339212.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339212/SRX1339212_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:06:33 2020]
+Finished job 73.
+53 of 136 steps (39%) done
+
+[Tue Mar 24 14:06:33 2020]
+Job 98: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339221.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339221/SRX1339221_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:06:43 2020]
+Finished job 98.
+54 of 136 steps (40%) done
+
+[Tue Mar 24 14:06:43 2020]
+Job 126: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339209.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339209/SRX1339209_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:06:55 2020]
+Finished job 126.
+55 of 136 steps (40%) done
+
+[Tue Mar 24 14:06:55 2020]
+Job 70: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339218.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339218/SRX1339218_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:06 2020]
+Finished job 70.
+56 of 136 steps (41%) done
+
+[Tue Mar 24 14:07:06 2020]
+Job 97: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339202.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339202/SRX1339202_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:17 2020]
+Finished job 97.
+57 of 136 steps (42%) done
+
+[Tue Mar 24 14:07:17 2020]
+Job 129: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339222.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339222/SRX1339222_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:26 2020]
+Finished job 129.
+58 of 136 steps (43%) done
+
+[Tue Mar 24 14:07:26 2020]
+Job 90: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339219.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339219/SRX1339219_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:35 2020]
+Finished job 90.
+59 of 136 steps (43%) done
+
+[Tue Mar 24 14:07:35 2020]
+Job 82: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339223.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339223/SRX1339223_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:44 2020]
+Finished job 82.
+60 of 136 steps (44%) done
+
+[Tue Mar 24 14:07:44 2020]
+Job 113: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339203.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339203/SRX1339203_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:07:54 2020]
+Finished job 113.
+61 of 136 steps (45%) done
+
+[Tue Mar 24 14:07:54 2020]
+Job 114: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339206.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339206/SRX1339206_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:02 2020]
+Finished job 114.
+62 of 136 steps (46%) done
+
+[Tue Mar 24 14:08:02 2020]
+Job 77: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339208.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339208/SRX1339208_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:12 2020]
+Finished job 77.
+63 of 136 steps (46%) done
+
+[Tue Mar 24 14:08:12 2020]
+Job 95: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339207.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339207/SRX1339207_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:20 2020]
+Finished job 95.
+64 of 136 steps (47%) done
+
+[Tue Mar 24 14:08:20 2020]
+Job 116: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339211.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339211/SRX1339211_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:28 2020]
+Finished job 116.
+65 of 136 steps (48%) done
+
+[Tue Mar 24 14:08:28 2020]
+Job 118: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339210.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339210/SRX1339210_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:36 2020]
+Finished job 118.
+66 of 136 steps (49%) done
+
+[Tue Mar 24 14:08:36 2020]
+Job 133: First stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339217.bam --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339217/SRX1339217_ST2_1st.gtf -p 10 -v 
+    
+[Tue Mar 24 14:08:43 2020]
+Finished job 133.
+67 of 136 steps (49%) done
+
+[Tue Mar 24 14:08:43 2020]
+Job 68: Merging Transcripts...
+
+
+        /home/roham/software/stringtie/stringtie --merge -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf -c 10 -i /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702706/SRX702706_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702701/SRX702701_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702703/SRX702703_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702713/SRX702713_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702708/SRX702708_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702722/SRX702722_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702714/SRX702714_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702716/SRX702716_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702711/SRX702711_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702712/SRX702712_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702715/SRX702715_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702718/SRX702718_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090057/ERX1090057_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702725/SRX702725_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702732/SRX702732_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702727/SRX702727_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090058/ERX1090058_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702726/SRX702726_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090060/ERX1090060_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090061/ERX1090061_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341658/ERX341658_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341659/ERX341659_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341660/ERX341660_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341661/ERX341661_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341663/ERX341663_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339203/SRX1339203_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341665/ERX341665_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339204/SRX1339204_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339206/SRX1339206_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339207/SRX1339207_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339209/SRX1339209_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339212/SRX1339212_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339217/SRX1339217_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339222/SRX1339222_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339205/SRX1339205_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339221/SRX1339221_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702702/SRX702702_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339223/SRX1339223_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339211/SRX1339211_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702720/SRX702720_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702707/SRX702707_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339202/SRX1339202_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702719/SRX702719_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702704/SRX702704_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339219/SRX1339219_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702709/SRX702709_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090056/ERX1090056_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702733/SRX702733_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702730/SRX702730_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702710/SRX702710_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090059/ERX1090059_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339218/SRX1339218_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341662/ERX341662_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX1090055/ERX1090055_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702721/SRX702721_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702705/SRX702705_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702723/SRX702723_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/ERX341664/ERX341664_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702729/SRX702729_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339216/SRX1339216_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702728/SRX702728_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339208/SRX1339208_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702717/SRX702717_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702724/SRX702724_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX702731/SRX702731_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339210/SRX1339210_ST2_1st.gtf /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_1st/SRX1339224/SRX1339224_ST2_1st.gtf -v 
+    
+[Tue Mar 24 14:09:09 2020]
+Finished job 68.
+68 of 136 steps (50%) done
+
+[Tue Mar 24 14:09:09 2020]
+Job 20: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702725.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702725/SRX702725_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702725/SRX702725_ST2_1st.abun -v
+    
+[Tue Mar 24 14:12:58 2020]
+Finished job 20.
+69 of 136 steps (51%) done
+
+[Tue Mar 24 14:12:58 2020]
+Job 18: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702721.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702721/SRX702721_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702721/SRX702721_ST2_1st.abun -v
+    
+[Tue Mar 24 14:16:18 2020]
+Finished job 18.
+70 of 136 steps (51%) done
+
+[Tue Mar 24 14:16:18 2020]
+Job 8: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702719.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702719/SRX702719_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702719/SRX702719_ST2_1st.abun -v
+    
+[Tue Mar 24 14:19:07 2020]
+Finished job 8.
+71 of 136 steps (52%) done
+
+[Tue Mar 24 14:19:07 2020]
+Job 60: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702726.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702726/SRX702726_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702726/SRX702726_ST2_1st.abun -v
+    
+[Tue Mar 24 14:22:01 2020]
+Finished job 60.
+72 of 136 steps (53%) done
+
+[Tue Mar 24 14:22:01 2020]
+Job 4: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702722.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702722/SRX702722_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702722/SRX702722_ST2_1st.abun -v
+    
+[Tue Mar 24 14:24:41 2020]
+Finished job 4.
+73 of 136 steps (54%) done
+
+[Tue Mar 24 14:24:41 2020]
+Job 66: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702724.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702724/SRX702724_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702724/SRX702724_ST2_1st.abun -v
+    
+[Tue Mar 24 14:27:07 2020]
+Finished job 66.
+74 of 136 steps (54%) done
+
+[Tue Mar 24 14:27:07 2020]
+Job 33: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702723.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702723/SRX702723_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702723/SRX702723_ST2_1st.abun -v
+    
+[Tue Mar 24 14:29:33 2020]
+Finished job 33.
+75 of 136 steps (55%) done
+
+[Tue Mar 24 14:29:33 2020]
+Job 15: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702720.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702720/SRX702720_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702720/SRX702720_ST2_1st.abun -v
+    
+[Tue Mar 24 14:31:51 2020]
+Finished job 15.
+76 of 136 steps (56%) done
+
+[Tue Mar 24 14:31:51 2020]
+Job 37: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702715.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702715/SRX702715_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702715/SRX702715_ST2_1st.abun -v
+    
+[Tue Mar 24 14:33:59 2020]
+Finished job 37.
+77 of 136 steps (57%) done
+
+[Tue Mar 24 14:33:59 2020]
+Job 14: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702712.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702712/SRX702712_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702712/SRX702712_ST2_1st.abun -v
+    
+[Tue Mar 24 14:36:14 2020]
+Finished job 14.
+78 of 136 steps (57%) done
+
+[Tue Mar 24 14:36:14 2020]
+Job 50: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702710.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702710/SRX702710_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702710/SRX702710_ST2_1st.abun -v
+    
+[Tue Mar 24 14:38:30 2020]
+Finished job 50.
+79 of 136 steps (58%) done
+
+[Tue Mar 24 14:38:30 2020]
+Job 17: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702733.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702733/SRX702733_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702733/SRX702733_ST2_1st.abun -v
+    
+[Tue Mar 24 14:41:04 2020]
+Finished job 17.
+80 of 136 steps (59%) done
+
+[Tue Mar 24 14:41:04 2020]
+Job 26: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702717.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702717/SRX702717_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702717/SRX702717_ST2_1st.abun -v
+    
+[Tue Mar 24 14:43:03 2020]
+Finished job 26.
+81 of 136 steps (60%) done
+
+[Tue Mar 24 14:43:03 2020]
+Job 29: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702711.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702711/SRX702711_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702711/SRX702711_ST2_1st.abun -v
+    
+[Tue Mar 24 14:45:03 2020]
+Finished job 29.
+82 of 136 steps (60%) done
+
+[Tue Mar 24 14:45:03 2020]
+Job 45: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702727.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702727/SRX702727_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702727/SRX702727_ST2_1st.abun -v
+    
+[Tue Mar 24 14:47:14 2020]
+Finished job 45.
+83 of 136 steps (61%) done
+
+[Tue Mar 24 14:47:14 2020]
+Job 23: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702706.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702706/SRX702706_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702706/SRX702706_ST2_1st.abun -v
+    
+[Tue Mar 24 14:49:23 2020]
+Finished job 23.
+84 of 136 steps (62%) done
+
+[Tue Mar 24 14:49:23 2020]
+Job 43: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702709.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702709/SRX702709_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702709/SRX702709_ST2_1st.abun -v
+    
+[Tue Mar 24 14:51:17 2020]
+Finished job 43.
+85 of 136 steps (62%) done
+
+[Tue Mar 24 14:51:17 2020]
+Job 67: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702731.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702731/SRX702731_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702731/SRX702731_ST2_1st.abun -v
+    
+[Tue Mar 24 14:53:26 2020]
+Finished job 67.
+86 of 136 steps (63%) done
+
+[Tue Mar 24 14:53:26 2020]
+Job 58: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702701.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702701/SRX702701_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702701/SRX702701_ST2_1st.abun -v
+    
+[Tue Mar 24 14:55:19 2020]
+Finished job 58.
+87 of 136 steps (64%) done
+
+[Tue Mar 24 14:55:19 2020]
+Job 16: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702718.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702718/SRX702718_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702718/SRX702718_ST2_1st.abun -v
+    
+[Tue Mar 24 14:57:00 2020]
+Finished job 16.
+88 of 136 steps (65%) done
+
+[Tue Mar 24 14:57:00 2020]
+Job 27: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702703.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702703/SRX702703_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702703/SRX702703_ST2_1st.abun -v
+    
+[Tue Mar 24 14:58:49 2020]
+Finished job 27.
+89 of 136 steps (65%) done
+
+[Tue Mar 24 14:58:49 2020]
+Job 39: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702728.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702728/SRX702728_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702728/SRX702728_ST2_1st.abun -v
+    
+[Tue Mar 24 15:00:46 2020]
+Finished job 39.
+90 of 136 steps (66%) done
+
+[Tue Mar 24 15:00:46 2020]
+Job 5: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702702.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702702/SRX702702_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702702/SRX702702_ST2_1st.abun -v
+    
+[Tue Mar 24 15:02:34 2020]
+Finished job 5.
+91 of 136 steps (67%) done
+
+[Tue Mar 24 15:02:34 2020]
+Job 49: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702730.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702730/SRX702730_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702730/SRX702730_ST2_1st.abun -v
+    
+[Tue Mar 24 15:04:18 2020]
+Finished job 49.
+92 of 136 steps (68%) done
+
+[Tue Mar 24 15:04:18 2020]
+Job 57: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702729.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702729/SRX702729_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702729/SRX702729_ST2_1st.abun -v
+    
+[Tue Mar 24 15:05:47 2020]
+Finished job 57.
+93 of 136 steps (68%) done
+
+[Tue Mar 24 15:05:47 2020]
+Job 19: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702714.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702714/SRX702714_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702714/SRX702714_ST2_1st.abun -v
+    
+[Tue Mar 24 15:06:58 2020]
+Finished job 19.
+94 of 136 steps (69%) done
+
+[Tue Mar 24 15:06:58 2020]
+Job 2: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702707.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702707/SRX702707_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702707/SRX702707_ST2_1st.abun -v
+    
+[Tue Mar 24 15:08:16 2020]
+Finished job 2.
+95 of 136 steps (70%) done
+
+[Tue Mar 24 15:08:16 2020]
+Job 3: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702708.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702708/SRX702708_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702708/SRX702708_ST2_1st.abun -v
+    
+[Tue Mar 24 15:09:33 2020]
+Finished job 3.
+96 of 136 steps (71%) done
+
+[Tue Mar 24 15:09:33 2020]
+Job 32: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702705.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702705/SRX702705_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702705/SRX702705_ST2_1st.abun -v
+    
+[Tue Mar 24 15:10:53 2020]
+Finished job 32.
+97 of 136 steps (71%) done
+
+[Tue Mar 24 15:10:53 2020]
+Job 10: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702716.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702716/SRX702716_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702716/SRX702716_ST2_1st.abun -v
+    
+[Tue Mar 24 15:11:56 2020]
+Finished job 10.
+98 of 136 steps (72%) done
+
+[Tue Mar 24 15:11:56 2020]
+Job 44: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702732.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702732/SRX702732_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702732/SRX702732_ST2_1st.abun -v
+    
+[Tue Mar 24 15:13:06 2020]
+Finished job 44.
+99 of 136 steps (73%) done
+
+[Tue Mar 24 15:13:06 2020]
+Job 59: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702713.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702713/SRX702713_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702713/SRX702713_ST2_1st.abun -v
+    
+[Tue Mar 24 15:14:08 2020]
+Finished job 59.
+100 of 136 steps (74%) done
+
+[Tue Mar 24 15:14:08 2020]
+Job 54: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX702704.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702704/SRX702704_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702704/SRX702704_ST2_1st.abun -v
+    
+[Tue Mar 24 15:15:07 2020]
+Finished job 54.
+101 of 136 steps (74%) done
+
+[Tue Mar 24 15:15:07 2020]
+Job 6: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341660.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341660/ERX341660_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341660/ERX341660_ST2_1st.abun -v
+    
+[Tue Mar 24 15:15:46 2020]
+Finished job 6.
+102 of 136 steps (75%) done
+
+[Tue Mar 24 15:15:46 2020]
+Job 9: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341659.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341659/ERX341659_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341659/ERX341659_ST2_1st.abun -v
+    
+[Tue Mar 24 15:16:24 2020]
+Finished job 9.
+103 of 136 steps (76%) done
+
+[Tue Mar 24 15:16:24 2020]
+Job 46: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341665.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341665/ERX341665_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341665/ERX341665_ST2_1st.abun -v
+    
+[Tue Mar 24 15:17:00 2020]
+Finished job 46.
+104 of 136 steps (76%) done
+
+[Tue Mar 24 15:17:00 2020]
+Job 12: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341658.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341658/ERX341658_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341658/ERX341658_ST2_1st.abun -v
+    
+[Tue Mar 24 15:17:36 2020]
+Finished job 12.
+105 of 136 steps (77%) done
+
+[Tue Mar 24 15:17:36 2020]
+Job 51: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341661.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341661/ERX341661_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341661/ERX341661_ST2_1st.abun -v
+    
+[Tue Mar 24 15:18:08 2020]
+Finished job 51.
+106 of 136 steps (78%) done
+
+[Tue Mar 24 15:18:08 2020]
+Job 48: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090056.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090056/ERX1090056_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090056/ERX1090056_ST2_1st.abun -v
+    
+[Tue Mar 24 15:18:36 2020]
+Finished job 48.
+107 of 136 steps (79%) done
+
+[Tue Mar 24 15:18:36 2020]
+Job 36: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341664.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341664/ERX341664_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341664/ERX341664_ST2_1st.abun -v
+    
+[Tue Mar 24 15:19:06 2020]
+Finished job 36.
+108 of 136 steps (79%) done
+
+[Tue Mar 24 15:19:06 2020]
+Job 22: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341662.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341662/ERX341662_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341662/ERX341662_ST2_1st.abun -v
+    
+[Tue Mar 24 15:19:37 2020]
+Finished job 22.
+109 of 136 steps (80%) done
+
+[Tue Mar 24 15:19:37 2020]
+Job 13: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090057.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090057/ERX1090057_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090057/ERX1090057_ST2_1st.abun -v
+    
+[Tue Mar 24 15:20:02 2020]
+Finished job 13.
+110 of 136 steps (81%) done
+
+[Tue Mar 24 15:20:02 2020]
+Job 52: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX341663.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341663/ERX341663_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341663/ERX341663_ST2_1st.abun -v
+    
+[Tue Mar 24 15:20:31 2020]
+Finished job 52.
+111 of 136 steps (82%) done
+
+[Tue Mar 24 15:20:31 2020]
+Job 1: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090058.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090058/ERX1090058_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090058/ERX1090058_ST2_1st.abun -v
+    
+[Tue Mar 24 15:20:57 2020]
+Finished job 1.
+112 of 136 steps (82%) done
+
+[Tue Mar 24 15:20:57 2020]
+Job 64: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090055.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090055/ERX1090055_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090055/ERX1090055_ST2_1st.abun -v
+    
+[Tue Mar 24 15:21:21 2020]
+Finished job 64.
+113 of 136 steps (83%) done
+
+[Tue Mar 24 15:21:21 2020]
+Job 25: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090059.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090059/ERX1090059_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090059/ERX1090059_ST2_1st.abun -v
+    
+[Tue Mar 24 15:21:47 2020]
+Finished job 25.
+114 of 136 steps (84%) done
+
+[Tue Mar 24 15:21:47 2020]
+Job 7: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339204.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339204/SRX1339204_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339204/SRX1339204_ST2_1st.abun -v
+    
+[Tue Mar 24 15:22:11 2020]
+Finished job 7.
+115 of 136 steps (85%) done
+
+[Tue Mar 24 15:22:11 2020]
+Job 65: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090060.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090060/ERX1090060_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090060/ERX1090060_ST2_1st.abun -v
+    
+[Tue Mar 24 15:22:33 2020]
+Finished job 65.
+116 of 136 steps (85%) done
+
+[Tue Mar 24 15:22:33 2020]
+Job 53: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/ERX1090061.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090061/ERX1090061_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090061/ERX1090061_ST2_1st.abun -v
+    
+[Tue Mar 24 15:22:54 2020]
+Finished job 53.
+117 of 136 steps (86%) done
+
+[Tue Mar 24 15:22:54 2020]
+Job 41: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339205.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339205/SRX1339205_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339205/SRX1339205_ST2_1st.abun -v
+    
+[Tue Mar 24 15:23:17 2020]
+Finished job 41.
+118 of 136 steps (87%) done
+
+[Tue Mar 24 15:23:17 2020]
+Job 35: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339216.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339216/SRX1339216_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339216/SRX1339216_ST2_1st.abun -v
+    
+[Tue Mar 24 15:23:39 2020]
+Finished job 35.
+119 of 136 steps (88%) done
+
+[Tue Mar 24 15:23:39 2020]
+Job 56: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339224.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339224/SRX1339224_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339224/SRX1339224_ST2_1st.abun -v
+    
+[Tue Mar 24 15:23:58 2020]
+Finished job 56.
+120 of 136 steps (88%) done
+
+[Tue Mar 24 15:23:58 2020]
+Job 24: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339212.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339212/SRX1339212_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339212/SRX1339212_ST2_1st.abun -v
+    
+[Tue Mar 24 15:24:19 2020]
+Finished job 24.
+121 of 136 steps (89%) done
+
+[Tue Mar 24 15:24:19 2020]
+Job 42: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339221.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339221/SRX1339221_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339221/SRX1339221_ST2_1st.abun -v
+    
+[Tue Mar 24 15:24:38 2020]
+Finished job 42.
+122 of 136 steps (90%) done
+
+[Tue Mar 24 15:24:38 2020]
+Job 62: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339209.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339209/SRX1339209_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339209/SRX1339209_ST2_1st.abun -v
+    
+[Tue Mar 24 15:24:58 2020]
+Finished job 62.
+123 of 136 steps (90%) done
+
+[Tue Mar 24 15:24:58 2020]
+Job 55: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339218.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339218/SRX1339218_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339218/SRX1339218_ST2_1st.abun -v
+    
+[Tue Mar 24 15:25:18 2020]
+Finished job 55.
+124 of 136 steps (91%) done
+
+[Tue Mar 24 15:25:18 2020]
+Job 31: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339202.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339202/SRX1339202_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339202/SRX1339202_ST2_1st.abun -v
+    
+[Tue Mar 24 15:25:37 2020]
+Finished job 31.
+125 of 136 steps (92%) done
+
+[Tue Mar 24 15:25:37 2020]
+Job 34: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339222.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339222/SRX1339222_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339222/SRX1339222_ST2_1st.abun -v
+    
+[Tue Mar 24 15:25:57 2020]
+Finished job 34.
+126 of 136 steps (93%) done
+
+[Tue Mar 24 15:25:57 2020]
+Job 47: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339219.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339219/SRX1339219_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339219/SRX1339219_ST2_1st.abun -v
+    
+[Tue Mar 24 15:26:17 2020]
+Finished job 47.
+127 of 136 steps (93%) done
+
+[Tue Mar 24 15:26:17 2020]
+Job 30: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339223.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339223/SRX1339223_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339223/SRX1339223_ST2_1st.abun -v
+    
+[Tue Mar 24 15:26:37 2020]
+Finished job 30.
+128 of 136 steps (94%) done
+
+[Tue Mar 24 15:26:37 2020]
+Job 61: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339203.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339203/SRX1339203_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339203/SRX1339203_ST2_1st.abun -v
+    
+[Tue Mar 24 15:26:53 2020]
+Finished job 61.
+129 of 136 steps (95%) done
+
+[Tue Mar 24 15:26:53 2020]
+Job 11: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339206.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339206/SRX1339206_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339206/SRX1339206_ST2_1st.abun -v
+    
+[Tue Mar 24 15:27:10 2020]
+Finished job 11.
+130 of 136 steps (96%) done
+
+[Tue Mar 24 15:27:10 2020]
+Job 21: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339208.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339208/SRX1339208_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339208/SRX1339208_ST2_1st.abun -v
+    
+[Tue Mar 24 15:27:28 2020]
+Finished job 21.
+131 of 136 steps (96%) done
+
+[Tue Mar 24 15:27:28 2020]
+Job 28: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339207.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339207/SRX1339207_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339207/SRX1339207_ST2_1st.abun -v
+    
+[Tue Mar 24 15:27:46 2020]
+Finished job 28.
+132 of 136 steps (97%) done
+
+[Tue Mar 24 15:27:46 2020]
+Job 40: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339211.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339211/SRX1339211_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339211/SRX1339211_ST2_1st.abun -v
+    
+[Tue Mar 24 15:28:04 2020]
+Finished job 40.
+133 of 136 steps (98%) done
+
+[Tue Mar 24 15:28:04 2020]
+Job 38: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339210.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339210/SRX1339210_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339210/SRX1339210_ST2_1st.abun -v
+    
+[Tue Mar 24 15:28:20 2020]
+Finished job 38.
+134 of 136 steps (99%) done
+
+[Tue Mar 24 15:28:20 2020]
+Job 63: Second stringtie run...
+
+
+        /home/roham/software/stringtie/stringtie /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/SRX1339217.bam -G /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_merge/stringtie2_merged.gtf --conservative -o /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339217/SRX1339217_ST2_2nd.gtf -p 1 -B -e -A /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339217/SRX1339217_ST2_1st.abun -v
+    
+[Tue Mar 24 15:28:36 2020]
+Finished job 63.
+135 of 136 steps (99%) done
+
+[Tue Mar 24 15:28:36 2020]
+localrule all:
+    input: /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702706/SRX702706_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702701/SRX702701_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702703/SRX702703_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702713/SRX702713_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702708/SRX702708_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702722/SRX702722_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702714/SRX702714_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702716/SRX702716_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702711/SRX702711_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702712/SRX702712_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702715/SRX702715_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702718/SRX702718_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090057/ERX1090057_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702725/SRX702725_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702732/SRX702732_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702727/SRX702727_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090058/ERX1090058_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702726/SRX702726_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090060/ERX1090060_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090061/ERX1090061_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341658/ERX341658_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341659/ERX341659_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341660/ERX341660_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341661/ERX341661_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341663/ERX341663_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339203/SRX1339203_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341665/ERX341665_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339204/SRX1339204_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339206/SRX1339206_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339207/SRX1339207_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339209/SRX1339209_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339212/SRX1339212_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339217/SRX1339217_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339222/SRX1339222_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339205/SRX1339205_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339221/SRX1339221_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702702/SRX702702_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339223/SRX1339223_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339211/SRX1339211_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702720/SRX702720_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702707/SRX702707_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339202/SRX1339202_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702719/SRX702719_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702704/SRX702704_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339219/SRX1339219_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702709/SRX702709_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090056/ERX1090056_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702733/SRX702733_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702730/SRX702730_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702710/SRX702710_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090059/ERX1090059_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339218/SRX1339218_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341662/ERX341662_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX1090055/ERX1090055_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702721/SRX702721_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702705/SRX702705_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702723/SRX702723_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/ERX341664/ERX341664_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702729/SRX702729_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339216/SRX1339216_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702728/SRX702728_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339208/SRX1339208_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702717/SRX702717_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702724/SRX702724_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX702731/SRX702731_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339210/SRX1339210_ST2_2nd.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/stringtie2/stringtie2_2nd/SRX1339224/SRX1339224_ST2_2nd.gtf
+    jobid: 0
+
+[Tue Mar 24 15:28:36 2020]
+Finished job 0.
+136 of 136 steps (100%) done
+Complete log: /home/gmoney/Code/moth/moth/annotation/.snakemake/log/2020-03-24T130325.711178.snakemake.log

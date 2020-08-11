@@ -1,0 +1,169 @@
+---
+title: "Liftoff moth annotation"
+author: "G$"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: xelatex
+  html_notebook: default
+  html_document:
+    df_print: paged
+  geometry: left=.5in,right=.5in,top=.5in,bottom=.5in
+mainfont: DejaVu Sans
+titlefont: DejaVu Sans
+---
+
+```{r setup, eval=TRUE, include=FALSE, cache=F, message=F, warning=F}
+#rm(list=ls());gc()
+#knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE, 
+                      message = FALSE, cache.lazy = FALSE, fig.align='center')
+options(scipen=999)
+
+library(tidyverse)
+library(cowplot)
+```
+
+# Running liftoff
+1. Run Liftoff on moth annotations total features in reference gtf: 41110
+
+2. liftoff gtf to new asm total features: 39957 
+
+3. There were 482 "unmapped" features 
+
+
+```{r data, include=F}
+out_path="/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie_liftoff/intermed_files"
+# load tmap files for comparing stringtie to liftoff and augustus
+
+tmap_aug <- read_tsv("/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_merge/Msexta_augustus_liftoff.augustus.hints.gtf.tmap") %>%
+  mutate(called = "augustus_liftoff")
+tmap_string <- read_tsv("/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_merge/Msexta_liftoff_stringtie.stringtie2_merged.gtf.tmap") %>%
+  mutate(called = "stringtie_liftoff")
+
+tmap <- rbind(tmap_aug, tmap_string)
+
+
+# load unmapped transcripts from the old assembly 
+
+unmapped <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/liftoff/unmapped_features.txt", col_names = F)
+
+
+sizes <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/ncbi_reference/chrom.sizes", col_names = F)
+
+ref_unmapped <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/ncbi_reference/GCF_000262585.1_Msex_1.0_genomic.gff", skip = 8, col_names = F) %>%
+  filter(X3 == "gene") %>%
+  separate(X9, sep = ";", into = c("ID", "parent","ref"), extra = "warn", fill = "warn") %>%
+  mutate(ID = str_remove(ID, "ID=")) %>%
+  mutate(liftoff = ifelse(ID %in% unmapped$X1, "unmapped", "mapped")) %>%
+  mutate(len = X5 - X4)
+
+ref <- inner_join(ref_unmapped, sizes, by = "X1") %>%
+  dplyr::rename( "contig_len"= X2.y ) 
+
+k <- tmap_string %>%
+  filter(class_code == "k") %>%
+  dplyr::select(c(qry_id, ref_id))
+
+# for this file want to put Stringtie coords into the gtf but keep everything else same
+#write.table(st_um, file = paste0(out_path, "/", "k_Stringtie.tsv"), quote = F, sep = "\t", row.names = F,col.names = F)
+```
+# Unmapped features
+Overall the unmapped transcripts were shorter than the mapped transcripts and the contig sizes they were on in the original assembly were smaller. This leads us to believe they were not full length transcripts and were fragmented in some way.
+
+```{r plot, echo = F, fig.height=3, fig.width=7}
+figs="/uru/Data/Nanopore/projects/moth/2020_analysis/figures"
+
+p1 <- ggplot(data = ref, aes(x = len, y = liftoff, fill = liftoff))+geom_boxplot()+theme_bw() + theme(legend.position = "none")+labs(xlab = "feature length")+xlim(0,20000)
+p2 <- ggplot(data = ref, aes(x = contig_len, y = liftoff, fill = liftoff))+geom_boxplot()+xlim(0,100000)+theme_bw()+labs(xlab = "reference contig length") + theme(legend.position = "none")
+ggsave(paste0(figs, "/liftoff_boxplot_trans_size.pdf"), p1, height = 5, width = 5)
+ggsave(paste0(figs, "/liftoff_boxplot_tig_size.pdf"), p2, height = 5, width = 5)
+plot_grid(p1,p2, ncol = 2)
+```
+\newpage
+# Compare liftoff and augustus to Stringtie2 assemblies from RNA-seq 
+Liftoff annotations match RNA-seq data better than augustus. If Liftoff transcript is contained within the Stringtie assembled transcript (k) include Stringtie coordinates in final annotation with liftoff functional annotation.
+Look more into the "u", stringtie assembled transcripts that are not in the liftoff annotations
+```{r augusutus, echo = F}
+dodgewidth <- position_dodge(width=0.9)
+p3 <- ggplot(data = tmap, aes(x = class_code, fill = called))+geom_bar(stat = "count", position = "dodge")+ stat_count(geom="text", position= dodgewidth, aes( label=..count..),
+vjust=-1,size=3)+theme_bw()
+ggsave(paste0(figs, "/liftoff_stringtie_compare.pdf"), p3, height = 5, width = 8)
+```
+
+![](/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie_liftoff/gff_compare.png)
+
+
+# Look into features that Liftoff could not map (n=482)
+
+1. Take unmapped features from reference transcript sequences
+2. Align Stringtie2 assembled transcripts to the unmapped features 
+3. Filter for MAPQ = 60
+
+```{r findu, include = F}
+paf <- read_tsv("/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie_liftoff/unmapped_stringtie_aln.paf", col_names = F) %>%
+  dplyr::rename("qry" = X1, "qry_length" = X2, "qry_start" = X3, "qry_end" = X4, "strand" = X5, "target" = X6, "target_length" = X7, "target_start" = X8, "target_end" = X9, "matching_bases" = X10, "num_bases" = X11, "mapq" = X12) %>%
+  filter(mapq == 60) %>%
+  mutate(frac_targ = num_bases/target_length) %>%
+  mutate(frac_qry = num_bases/qry_length) %>%
+  arrange(qry, num_bases) %>%
+  group_by(qry) %>%
+  slice(1L) %>%
+  ungroup()
+
+st_um <- paf %>%
+  select(c(qry, target))
+
+# for this file want Stringtie coords into gtf but take everything else from reference gtf
+#write.table(st_um, file = paste0(out_path, "/", "liftoff_UM_Stringtie.tsv"), quote = F, sep = "\t", row.names = F,col.names = F)
+```
+
+```{r density, echo = F}
+p1 <- ggplot(data = paf, aes(x = frac_targ))+geom_density()+labs(x = "Fraction of reference bases mapped to Stringtie")+theme_classic()+xlim(0,1)
+p2 <- ggplot(data = paf, aes(x = frac_qry))+geom_density()+labs(x = "Fraction of Stringtie bases mapped to reference")+theme_classic()+xlim(0,1)
+
+plot_grid(p1, p2, ncol = 1)
+```
+
+545 transcripts map to 297 of the unmapped features. By plotting fraction of the length that mapped we can tell that the unmapped features are fragmented because a majority of the sequence maps to a portion of the Stringtie transcript. 
+
+# Look into the Stringtie assembled transcripts that are not in the liftoff annotations
+1. Filter the Stringtie transcripts that are "u" when compared to liftoff transcripts
+2. Compare the augustus gene predictions with the Stringtie "u" transcripts 
+3. 794 Stringtie "u" transcripts overlap exactly with augustus gene predictions
+
+```{r augustus, include = F}
+
+# first take all the unmapped stringtie names 
+u <- tmap_string %>%
+  filter(class_code == "u") %>%
+  select("qry_id") %>%
+  distinct()
+# load in stringtie/augustus overlaps
+
+tmap_aug_string <- read_tsv("/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_merge/Msexta_augustus_stringtie.stringtie2_merged.gtf.tmap") %>%
+  filter(qry_id %in% u$qry_id) %>%
+  filter(!qry_id %in% paf$qry) %>%
+  filter(class_code == "=")
+
+count_ovl <- tmap_aug_string %>%
+  dplyr::select(qry_gene_id) 
+# there are 794 genes that overlap between augustus and stringtie but are not in liftoff annotations -- functionally annotate these - if they blast to things they might be real
+
+# this file idk how to format it, want Stringtie gtf into new asm gtf
+write.table(count_ovl, file = paste0(out_path, "/", "Stringtie_tokeep.tsv"), quote = F, sep = "\t", row.names = F,col.names = F)
+
+```
+# total feature count 
+from liftoff: 39957
+
+from Stringtie mapped to unmapped reference features: `r length(paf$qry)`
+
+from Stringtie/augustus exact overlaps not in reference: `r length(tmap_aug_string$qry_id)`
+
+Total features: `r (39957+length(paf$qry)+length(tmap_aug_string$qry_id))`
+
+Total features in old asm: 41110

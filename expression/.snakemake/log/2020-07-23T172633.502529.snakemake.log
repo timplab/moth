@@ -1,0 +1,3 @@
+NotADirectoryError in line 17 of /home/gmoney/Code/moth/moth/expression/run_stringtie:
+[Errno 20] Not a directory: '/uru/Data/Nanopore/projects/moth/2020_analysis/FINAL/Stringtie_liftoff_merged.gff'
+  File "/home/gmoney/Code/moth/moth/expression/run_stringtie", line 17, in <module>

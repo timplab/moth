@@ -1,0 +1,494 @@
+---
+title: "Differential expression analysis of adult and larval antennae tissue in the model organism Manduca sexta"
+author: "Ariel Gershman (worked with Rachael Sparklin)"
+output: pdf_document
+date: 4/22/2020
+fontsize: 11pt
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("DESeq2")
+library("matrixStats")
+#library("pcaExplorer")
+library("ggplot2")
+library("RColorBrewer") # Load a package giving more colors
+library("pheatmap") # load a package for making heatmaps
+#library("glmpca")
+#library(org.Hs.eg.db)
+library(tidyverse)
+#library("PoiClaClu")
+library(viridis)
+#library(kableExtra)
+library(knitr)
+
+```
+
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+ 
+
+```{r load_data, include= F}
+#gene_id <- read_tsv("~/ariel-and-rachael-kill-it-at-stats/data/gene_IDs.txt", col_names = F)
+dir="/uru/Data/Nanopore/projects/moth/2020_analysis/expression/stringtie2_combined"
+colData <- read.csv(paste0(dir, "/phenotype.tsv"), sep="\t", row.names=6)
+
+gene_count <- read_csv(paste0(dir, "/gene_count_matrix.csv")) %>%
+  dplyr::select(c("gene_id", rownames(colData)))
+
+# we need to replace the matrix column with the gene_id with the corresponding gene names from the gene_id file
+countData <- as.matrix(gene_count[,2:68])
+rownames(countData) <- gene_count$gene_id
+
+
+
+all(rownames(colData) %in% colnames(countData))
+
+```
+
+```{r dds, include = T, warning=FALSE,message=FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+# make into dds object 
+dds <- DESeqDataSetFromMatrix(countData = countData,colData = colData, design = ~ devstage)
+# only compare the larval and adult antennae samples
+#dds <- dds[ , dds$tissue == "antennae" ]
+
+# droplevels
+#dds$devstage <- droplevels(dds$devstage)
+#dds$tissue <- droplevels(dds$tissue)
+
+# create deseq object 
+dds <- DESeq(dds)
+res <- results(dds, alpha = .01)
+
+summary(res)
+```
+
+```{r pca, include = T, warning=FALSE,message=FALSE, fig.width=4, fig.height=8}
+rld <- rlog(dds, blind = FALSE)
+plotPCA(rld, intgroup=c("devstage"))+theme_classic()
+
+```
+
+
+```{r all_genes, include = T, warning=FALSE,message=FALSE, fig.width=10, fig.height=10, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+figs="/uru/Data/Nanopore/projects/moth/2020_analysis/figures"
+goi <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/PF00089_gene_ID.txt", col_names = F)
+include_list <- goi$X1
+
+
+# serine proteases in OG0001181 (4) OG0000661 (10) OG0000089 (21) way more than rest - these are't the gut specific ones
+#OG0011340 has 5, only species that has them and are gut specific 
+
+
+#mat = assay(rld)
+mat <- read.table(paste0(dir, "/Msexta.rld"),sep = " ")
+
+#write.table(mat, file = paste0(dir, "/Msexta.rld"), append = FALSE, quote = TRUE, sep = " ",
+#            eol = "\n", na = "NA", dec = ".", row.names = TRUE,
+#            col.names = TRUE, qmethod = c("escape", "double"),
+#            fileEncoding = "")
+
+
+lib_list <- df %>%
+  filter(tissue == "fatbody")
+lib_list <- rownames(lib_list)
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+  separate(rowname, into= c("gene_id", "crap"),  sep = "\\|") %>%
+  dplyr::select(-c("crap")) %>%
+#  filter(gene_id %in% include_list)%>%
+ # dplyr::select(c(lib_list, "gene_id")) %>%
+  column_to_rownames("gene_id") 
+
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+
+mat <- as.matrix(mat)
+#mat[row.names(mat) %in% include_list, ]
+
+quant <-as.data.frame(mat)
+
+#mat = mat - rowMeans(mat) # Subtract the row means from each value
+mat = mat[rowSums(mat[, -1] > 0) != 0, ]
+mat <- mat[mat[, 1] >= 3, ]
+
+for_plot <- as.data.frame(mat) %>%
+  gather() %>%
+  ggplot(aes(x= value))+geom_density()+xlim(-20,20)+geom_vline(xintercept=3)
+## remove genes that don't change across tissues
+#sum <- as.data.frame(rowSums(abs(mat))) %>%
+#  filter(`rowSums(abs(mat))` > 15) %>%
+#  rownames_to_column() %>%
+#  dplyr::select("rowname")
+#
+#mat <- as.data.frame(mat) %>%
+#  rownames_to_column() %>%
+#  filter(rowname %in% sum$rowname)%>%
+#  column_to_rownames("rowname")
+#
+#mat <- as.matrix(mat)
+#ggplot(data = sum, aes(x = `rowSums(abs(mat))`))+geom_density()+xlim(0,25)
+# based on distribution chose 15 as the threshold for including genes in clustering
+
+# add row and column names
+df = as.data.frame(colData(rld)[,c("devstage", "tissue")])
+colnames(df) = c("Developmental stage" , "tissue")
+
+```
+
+```{r cluster_all_genes, include=F}
+
+# determine optimal clusters 
+library(factoextra)
+library(NbClust)
+
+#mat_df <- as.data.frame(mat)
+#fviz_nbclust(mat_df, kmeans, method = "wss", k.max = 100) +
+#    geom_vline(linetype = 2)+
+#  labs(subtitle = "Elbow method")
+#
+#fviz_nbclust(mat_df, kmeans, method = "silhouette")+
+#  labs(subtitle = "Silhouette method")
+
+hclust_matrix <- mat %>% 
+  # transpose the matrix so genes are as columns
+  t() %>% 
+  # apply scalling to each column of the matrix (genes)
+  scale() %>% 
+  # transpose back so genes are as rows again
+  t()
+
+#gene_dist <- dist(hclust_matrix)
+
+#gene_hclust <- hclust(gene_dist, method = "complete")
+
+# The default `plot()` function can be used to produce a simple dendrogram
+plot(gene_hclust, labels = FALSE)
+abline(h = 14.5, col = "brown", lwd = 2) # add horizontal line to illustrate cutting dendrogram
+
+gene_cluster <- cutree(gene_hclust, h = 14.5) %>% 
+  # turn the named vector into a tibble
+  enframe() %>% 
+  # rename some of the columns
+  dplyr::rename("gene" = name, "cluster" = value)
+
+head(gene_cluster)
+sum <- gene_cluster %>%
+  group_by(cluster) %>%
+  summarise(n())
+
+group <- cutree(gene_hclust, h = 14)
+#pdf(file = paste0(figs, "/clustered_all_gene_heatmap_zscores.pdf"), height = 15, width = 15)
+library(ComplexHeatmap)
+column_ha = HeatmapAnnotation(df = df)
+HT <- Heatmap(hclust_matrix, show_row_names = FALSE, top_annotation = column_ha,border = T,cluster_columns=FALSE, clustering_distance_columns = "euclidean")
+draw(HT)
+
+#dev.off()
+```
+
+```{r add_gos, include=F}
+go <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/transcript_GO_clean.tsv", col_names = F)
+tx2gene <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/FINAL/tx2gene_clean.tsv", col_names = F)
+
+go_IDs <- merge(go, tx2gene, by = "X1") %>%
+  dplyr::rename("gene" = X2.y, "GO" = X2.x) %>%
+  dplyr::select(c(gene, GO)) %>%
+  distinct()
+#
+#write.table(go_IDs, file = "/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/gene_id_GO.tsv", #append = FALSE, quote = F, sep = "\t", row.names = F,
+#            col.names = F)
+
+
+# Gene ontology 
+library(topGO)
+
+# load sig genes and GO terms
+geneID2GO <- topGO::readMappings("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/gene_id_GO.tsv")
+
+str(head(geneID2GO))
+geneUniverse <- names(geneID2GO) 
+
+for (i in 1:18){
+  
+  c <- t(t(row.names(hclust_matrix[row_order(HT)[[i]],])))
+  clust.go <- go_IDs %>%
+    filter(gene %in% c)
+
+
+geneList <- factor(as.integer(geneUniverse %in% clust.go$gene))
+names(geneList) <- geneUniverse
+
+myGOdata <- new("topGOdata", description="My project", ontology="CC", allGenes=geneList,  annot = annFUN.gene2GO, gene2GO = geneID2GO, nodeSize = 10)
+
+# significance testing 
+
+resultFisher <- runTest(myGOdata, algorithm = "weight01", statistic = "fisher")
+
+goEnrichment <- GenTable(myGOdata, classicFisher = resultFisher, orderBy = "resultFisher", ranksOf = "classicFisher", topNodes = 20) %>%
+  filter(classicFisher <=.05) %>%
+  mutate(cluster  = i)
+
+
+
+
+write.table(goEnrichment, file = paste0("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/cluster_GO_CC", i, ".tsv"), append = FALSE, quote = F, sep = "\t", row.names = F,
+            col.names = T)
+}
+
+
+```
+
+
+```{r proteaes, include=F}
+
+goi <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/PF00089_gene_ID.txt", col_names = F)
+include_list <- goi$X1
+
+
+# serine proteases in OG0001181 (4) OG0000661 (10) OG0000089 (21) way more than rest - these are't the gut specific ones
+#OG0011340 has 5, only species that has them and are gut specific 
+
+
+#mat = assay(rld)
+mat <- read.table(paste0(dir, "/Msexta.rld"),sep = " ")
+
+#write.table(mat, file = paste0(dir, "/Msexta.rld"), append = FALSE, quote = TRUE, sep = " ",
+#            eol = "\n", na = "NA", dec = ".", row.names = TRUE,
+#            col.names = TRUE, qmethod = c("escape", "double"),
+#            fileEncoding = "")
+
+
+lib_list <- df %>%
+  filter(tissue == "midgut")
+lib_list <- rownames(lib_list)
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+  separate(rowname, into= c("gene_id", "crap"),  sep = "\\|") %>%
+  dplyr::select(-c("crap")) %>%
+  filter(gene_id %in% include_list)%>%
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+  column_to_rownames("gene_id")
+
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+
+mat <- as.matrix(mat)
+#mat = mat - rowMeans(mat) # Subtract the row means from each value
+mat = mat[rowSums(mat[, -1] > 0) != 0, ]
+
+# remove genes that don't change across tissues
+#sum <- as.data.frame(rowSums(abs(mat))) %>%
+#  filter(`rowSums(abs(mat))` > 15) %>%
+#  rownames_to_column() %>%
+#  dplyr::select("rowname")
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+ # filter(rowname %in% sum$rowname)%>%
+  column_to_rownames("rowname")
+mat <- as.matrix(mat)
+
+hclust_matrix <- mat %>% 
+  # transpose the matrix so genes are as columns
+  t() %>% 
+  # apply scalling to each column of the matrix (genes)
+  scale() %>% 
+  # transpose back so genes are as rows again
+  t()
+
+quant <-as.data.frame(mat)
+
+
+#ggplot(data = sum, aes(x = `rowSums(abs(mat))`))+geom_density()+xlim(0,25)
+# based on distribution chose 15 as the threshold for including genes in clustering
+
+# add row and column names
+#df = as.data.frame(colData(rld)[,c("devstage", "tissue")])
+colnames(df) = c("Developmental stage" , "tissue")
+#rownames(df) = colnames(mat) 
+column_ha = HeatmapAnnotation(df = df)
+HT <- Heatmap(hclust_matrix, show_row_names = FALSE , top_annotation = column_ha, split = 5, border = T,cluster_columns=F)
+draw(HT)
+
+
+```
+
+
+
+```{r get_clust, include=F}
+
+c1 <- t(t(row.names(hclust_matrix[row_order(HT)[[1]],])))
+
+
+mat <- read.table(paste0(dir, "/Msexta.rld"),sep = " ")
+
+lib_list <- df %>%
+  filter(tissue == "midgut")
+lib_list <- rownames(lib_list)
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+  separate(rowname, into= c("gene_id", "crap"),  sep = "\\|") %>%
+  dplyr::select(-c("crap")) %>%
+  filter(gene_id %in% c1)%>%
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+  column_to_rownames("gene_id")
+
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+
+mat <- as.matrix(mat)
+mat = mat - rowMeans(mat) # Subtract the row means from each value
+mat = mat[rowSums(mat[, -1] > 0) != 0, ]
+
+# remove genes that don't change across tissues
+sum <- as.data.frame(rowSums(abs(mat))) %>%
+  filter(`rowSums(abs(mat))` > 15) %>%
+  rownames_to_column() %>%
+  dplyr::select("rowname")
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+  filter(rowname %in% sum$rowname)%>%
+  column_to_rownames("rowname")
+mat <- as.matrix(mat)
+
+hclust_matrix <- mat %>% 
+  # transpose the matrix so genes are as columns
+  t() %>% 
+  # apply scalling to each column of the matrix (genes)
+  scale() %>% 
+  # transpose back so genes are as rows again
+  t()
+
+quant <-as.data.frame(mat)
+quant <- quant %>%
+  colMeans()
+
+quant <- melt(quant) %>%
+  tibble::rownames_to_column("lib") %>%
+  dplyr::filter(lib %in% lib_list)
+
+colnames(df) = c("Developmental stage" , "tissue")
+#pdf(file = paste0(figs, "/clustered_proteases.pdf"), height = 15, width = 15)
+column_ha = HeatmapAnnotation(df = df)
+HT <- Heatmap(hclust_matrix, show_row_names = FALSE , top_annotation = column_ha, border = T,cluster_columns=F)
+draw(HT)
+#dev.off()
+
+
+
+order=c("SRX702709",
+"SRX1339208",
+"SRX702713",
+"SRX1339209",
+"SRX1339210",
+"SRX1339212",
+"SRX1339211",
+"SRX1339217",
+"SRX1339216",
+"SRX702719",
+"SRX702720",
+"SRX702721",
+"SRX702722"
+)
+
+quant$lib <- factor(quant$lib,levels = order)
+
+p3 <- ggplot(data = quant, aes(x = lib, y = value))+geom_histogram(stat = "identity")+theme_bw()
+#ggsave(paste0(figs, "/midgut_protease_bar.pdf"), p3, height = 5, width = 5)
+```
+
+```{r autophagy, include=F}
+
+goi <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/interproscan/GO0006914_autophagy_genes.tsv", col_names = F)
+include_list <- goi$X1
+
+
+# serine proteases in OG0001181 (4) OG0000661 (10) OG0000089 (21) way more than rest - these are't the gut specific ones
+#OG0011340 has 5, only species that has them and are gut specific 
+
+
+#mat = assay(rld)
+mat <- read.table(paste0(dir, "/Msexta.rld"),sep = " ")
+mat = mat[rowSums(mat[, -1] > 0) != 0, ]
+#write.table(mat, file = paste0(dir, "/Msexta.rld"), append = FALSE, quote = TRUE, sep = " ",
+#            eol = "\n", na = "NA", dec = ".", row.names = TRUE,
+#            col.names = TRUE, qmethod = c("escape", "double"),
+#            fileEncoding = "")
+
+mat <- mat %>% 
+  # transpose the matrix so genes are as columns
+  t() %>% 
+  # apply scalling to each column of the matrix (genes)
+  scale() %>% 
+  # transpose back so genes are as rows again
+  t()
+
+lib_list <- df %>%
+  filter(tissue == "midgut")
+lib_list <- rownames(lib_list)
+
+mat <- as.data.frame(mat) %>%
+  rownames_to_column() %>%
+  separate(rowname, into= c("gene_id", "crap"),  sep = "\\|") %>%
+  dplyr::select(-c("crap")) %>%
+  filter(gene_id %in% include_list)%>%
+  dplyr::select(c(lib_list, "gene_id")) %>%
+  column_to_rownames("gene_id")
+
+#  dplyr::select(c(lib_list, "gene_id")) %>%
+
+mat <- as.matrix(mat)
+#mat = mat - rowMeans(mat) # Subtract the row means from each value
+
+
+
+
+
+
+quant <-as.data.frame(mat)
+
+
+quant <-as.data.frame(mat)
+quant <- quant %>%
+  colMeans()
+
+quant <- melt(quant) %>%
+  tibble::rownames_to_column("lib") %>%
+  dplyr::filter(lib %in% lib_list)
+
+
+
+order=c("SRX702709",
+"SRX1339208",
+"SRX702713",
+"SRX1339209",
+"SRX1339210",
+"SRX1339212",
+"SRX1339211",
+"SRX1339217",
+"SRX1339216",
+"SRX702719",
+"SRX702720",
+"SRX702721",
+"SRX702722"
+)
+
+quant$lib <- factor(quant$lib,levels = order)
+
+p3 <- ggplot(data = quant, aes(x = lib, y = value))+geom_histogram(stat = "identity")+theme_bw()
+
+# add row and column names
+colnames(df) = c("Developmental stage" , "tissue")
+#rownames(df) = colnames(mat) 
+pdf(file = paste0(figs, "/clustered_autophagy.pdf"), height = 15, width = 15)
+library(circlize)
+column_ha = HeatmapAnnotation(df = df)
+#ht_list = Heatmap( col = colorRamp2(c(-4, 0, 4), c("blue", "white", "red")))
+HT <- Heatmap(mat, show_row_names = T ,  border = T, cluster_columns=F, col = colorRamp2(c(-4, 0, 4), c("blue", "white", "red")))
+draw(HT)
+dev.off
+
+```

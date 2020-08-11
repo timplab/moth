@@ -1,0 +1,14 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	all
+	1	stringtie_merge
+	67	stringtie_short_1st
+	67	stringtie_short_2nd
+	136
+
+[Tue Mar 24 12:53:08 2020]
+Job 110: First stringtie run...
+
+RuleException in line 26 of /home/gmoney/Code/moth/moth/annotation/run_stringtie:
+'Params' object has no attribute 'abun'

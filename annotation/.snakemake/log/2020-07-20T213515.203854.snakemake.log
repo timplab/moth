@@ -1,0 +1,966 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	stringtie_merge
+	67	stringtie_short_1st
+	67	stringtie_short_2nd
+	136
+
+[Mon Jul 20 21:35:15 2020]
+Job 106: First stringtie run...
+
+[Mon Jul 20 21:37:13 2020]
+Finished job 106.
+1 of 136 steps (0.74%) done
+
+[Mon Jul 20 21:37:13 2020]
+Job 128: First stringtie run...
+
+[Mon Jul 20 21:38:35 2020]
+Finished job 128.
+2 of 136 steps (1%) done
+
+[Mon Jul 20 21:38:35 2020]
+Job 107: First stringtie run...
+
+[Mon Jul 20 21:40:06 2020]
+Finished job 107.
+3 of 136 steps (2%) done
+
+[Mon Jul 20 21:40:06 2020]
+Job 113: First stringtie run...
+
+[Mon Jul 20 21:41:31 2020]
+Finished job 113.
+4 of 136 steps (3%) done
+
+[Mon Jul 20 21:41:31 2020]
+Job 103: First stringtie run...
+
+[Mon Jul 20 21:42:56 2020]
+Finished job 103.
+5 of 136 steps (4%) done
+
+[Mon Jul 20 21:42:56 2020]
+Job 92: First stringtie run...
+
+[Mon Jul 20 21:44:04 2020]
+Finished job 92.
+6 of 136 steps (4%) done
+
+[Mon Jul 20 21:44:04 2020]
+Job 130: First stringtie run...
+
+[Mon Jul 20 21:45:11 2020]
+Finished job 130.
+7 of 136 steps (5%) done
+
+[Mon Jul 20 21:45:11 2020]
+Job 75: First stringtie run...
+
+[Mon Jul 20 21:46:18 2020]
+Finished job 75.
+8 of 136 steps (6%) done
+
+[Mon Jul 20 21:46:18 2020]
+Job 124: First stringtie run...
+
+[Mon Jul 20 21:47:33 2020]
+Finished job 124.
+9 of 136 steps (7%) done
+
+[Mon Jul 20 21:47:33 2020]
+Job 87: First stringtie run...
+
+[Mon Jul 20 21:48:40 2020]
+Finished job 87.
+10 of 136 steps (7%) done
+
+[Mon Jul 20 21:48:40 2020]
+Job 104: First stringtie run...
+
+[Mon Jul 20 21:49:38 2020]
+Finished job 104.
+11 of 136 steps (8%) done
+
+[Mon Jul 20 21:49:38 2020]
+Job 120: First stringtie run...
+
+[Mon Jul 20 21:50:51 2020]
+Finished job 120.
+12 of 136 steps (9%) done
+
+[Mon Jul 20 21:50:51 2020]
+Job 118: First stringtie run...
+
+[Mon Jul 20 21:52:03 2020]
+Finished job 118.
+13 of 136 steps (10%) done
+
+[Mon Jul 20 21:52:03 2020]
+Job 90: First stringtie run...
+
+[Mon Jul 20 21:52:57 2020]
+Finished job 90.
+14 of 136 steps (10%) done
+
+[Mon Jul 20 21:52:57 2020]
+Job 114: First stringtie run...
+
+[Mon Jul 20 21:53:52 2020]
+Finished job 114.
+15 of 136 steps (11%) done
+
+[Mon Jul 20 21:53:52 2020]
+Job 89: First stringtie run...
+
+[Mon Jul 20 21:54:43 2020]
+Finished job 89.
+16 of 136 steps (12%) done
+
+[Mon Jul 20 21:54:43 2020]
+Job 123: First stringtie run...
+
+[Mon Jul 20 21:55:45 2020]
+Finished job 123.
+17 of 136 steps (12%) done
+
+[Mon Jul 20 21:55:45 2020]
+Job 119: First stringtie run...
+
+[Mon Jul 20 21:56:47 2020]
+Finished job 119.
+18 of 136 steps (13%) done
+
+[Mon Jul 20 21:56:47 2020]
+Job 83: First stringtie run...
+
+[Mon Jul 20 21:57:41 2020]
+Finished job 83.
+19 of 136 steps (14%) done
+
+[Mon Jul 20 21:57:41 2020]
+Job 99: First stringtie run...
+
+[Mon Jul 20 21:58:30 2020]
+Finished job 99.
+20 of 136 steps (15%) done
+
+[Mon Jul 20 21:58:30 2020]
+Job 74: First stringtie run...
+
+[Mon Jul 20 21:59:25 2020]
+Finished job 74.
+21 of 136 steps (15%) done
+
+[Mon Jul 20 21:59:25 2020]
+Job 116: First stringtie run...
+
+[Mon Jul 20 22:00:19 2020]
+Finished job 116.
+22 of 136 steps (16%) done
+
+[Mon Jul 20 22:00:19 2020]
+Job 98: First stringtie run...
+
+[Mon Jul 20 22:01:11 2020]
+Finished job 98.
+23 of 136 steps (17%) done
+
+[Mon Jul 20 22:01:11 2020]
+Job 93: First stringtie run...
+
+[Mon Jul 20 22:01:51 2020]
+Finished job 93.
+24 of 136 steps (18%) done
+
+[Mon Jul 20 22:01:51 2020]
+Job 126: First stringtie run...
+
+[Mon Jul 20 22:02:39 2020]
+Finished job 126.
+25 of 136 steps (18%) done
+
+[Mon Jul 20 22:02:39 2020]
+Job 85: First stringtie run...
+
+[Mon Jul 20 22:03:26 2020]
+Finished job 85.
+26 of 136 steps (19%) done
+
+[Mon Jul 20 22:03:26 2020]
+Job 79: First stringtie run...
+
+[Mon Jul 20 22:04:05 2020]
+Finished job 79.
+27 of 136 steps (20%) done
+
+[Mon Jul 20 22:04:05 2020]
+Job 115: First stringtie run...
+
+[Mon Jul 20 22:04:38 2020]
+Finished job 115.
+28 of 136 steps (21%) done
+
+[Mon Jul 20 22:04:38 2020]
+Job 109: First stringtie run...
+
+[Mon Jul 20 22:05:12 2020]
+Finished job 109.
+29 of 136 steps (21%) done
+
+[Mon Jul 20 22:05:12 2020]
+Job 71: First stringtie run...
+
+[Mon Jul 20 22:05:46 2020]
+Finished job 71.
+30 of 136 steps (22%) done
+
+[Mon Jul 20 22:05:46 2020]
+Job 88: First stringtie run...
+
+[Mon Jul 20 22:06:21 2020]
+Finished job 88.
+31 of 136 steps (23%) done
+
+[Mon Jul 20 22:06:21 2020]
+Job 70: First stringtie run...
+
+[Mon Jul 20 22:06:45 2020]
+Finished job 70.
+32 of 136 steps (24%) done
+
+[Mon Jul 20 22:06:45 2020]
+Job 100: First stringtie run...
+
+[Mon Jul 20 22:07:09 2020]
+Finished job 100.
+33 of 136 steps (24%) done
+
+[Mon Jul 20 22:07:09 2020]
+Job 108: First stringtie run...
+
+[Mon Jul 20 22:07:34 2020]
+Finished job 108.
+34 of 136 steps (25%) done
+
+[Mon Jul 20 22:07:34 2020]
+Job 81: First stringtie run...
+
+[Mon Jul 20 22:07:59 2020]
+Finished job 81.
+35 of 136 steps (26%) done
+
+[Mon Jul 20 22:07:59 2020]
+Job 78: First stringtie run...
+
+[Mon Jul 20 22:08:22 2020]
+Finished job 78.
+36 of 136 steps (26%) done
+
+[Mon Jul 20 22:08:22 2020]
+Job 111: First stringtie run...
+
+[Mon Jul 20 22:08:45 2020]
+Finished job 111.
+37 of 136 steps (27%) done
+
+[Mon Jul 20 22:08:45 2020]
+Job 82: First stringtie run...
+
+[Mon Jul 20 22:09:06 2020]
+Finished job 82.
+38 of 136 steps (28%) done
+
+[Mon Jul 20 22:09:06 2020]
+Job 135: First stringtie run...
+
+[Mon Jul 20 22:09:23 2020]
+Finished job 135.
+39 of 136 steps (29%) done
+
+[Mon Jul 20 22:09:23 2020]
+Job 73: First stringtie run...
+
+[Mon Jul 20 22:09:43 2020]
+Finished job 73.
+40 of 136 steps (29%) done
+
+[Mon Jul 20 22:09:43 2020]
+Job 129: First stringtie run...
+
+[Mon Jul 20 22:10:02 2020]
+Finished job 129.
+41 of 136 steps (30%) done
+
+[Mon Jul 20 22:10:02 2020]
+Job 69: First stringtie run...
+
+[Mon Jul 20 22:10:16 2020]
+Finished job 69.
+42 of 136 steps (31%) done
+
+[Mon Jul 20 22:10:16 2020]
+Job 84: First stringtie run...
+
+[Mon Jul 20 22:10:33 2020]
+Finished job 84.
+43 of 136 steps (32%) done
+
+[Mon Jul 20 22:10:33 2020]
+Job 72: First stringtie run...
+
+[Mon Jul 20 22:10:48 2020]
+Finished job 72.
+44 of 136 steps (32%) done
+
+[Mon Jul 20 22:10:48 2020]
+Job 125: First stringtie run...
+
+[Mon Jul 20 22:11:04 2020]
+Finished job 125.
+45 of 136 steps (33%) done
+
+[Mon Jul 20 22:11:04 2020]
+Job 86: First stringtie run...
+
+[Mon Jul 20 22:11:19 2020]
+Finished job 86.
+46 of 136 steps (34%) done
+
+[Mon Jul 20 22:11:19 2020]
+Job 134: First stringtie run...
+
+[Mon Jul 20 22:11:33 2020]
+Finished job 134.
+47 of 136 steps (35%) done
+
+[Mon Jul 20 22:11:33 2020]
+Job 105: First stringtie run...
+
+[Mon Jul 20 22:11:44 2020]
+Finished job 105.
+48 of 136 steps (35%) done
+
+[Mon Jul 20 22:11:44 2020]
+Job 133: First stringtie run...
+
+[Mon Jul 20 22:11:55 2020]
+Finished job 133.
+49 of 136 steps (36%) done
+
+[Mon Jul 20 22:11:55 2020]
+Job 96: First stringtie run...
+
+[Mon Jul 20 22:12:05 2020]
+Finished job 96.
+50 of 136 steps (37%) done
+
+[Mon Jul 20 22:12:05 2020]
+Job 122: First stringtie run...
+
+[Mon Jul 20 22:12:17 2020]
+Finished job 122.
+51 of 136 steps (38%) done
+
+[Mon Jul 20 22:12:17 2020]
+Job 94: First stringtie run...
+
+[Mon Jul 20 22:12:27 2020]
+Finished job 94.
+52 of 136 steps (38%) done
+
+[Mon Jul 20 22:12:27 2020]
+Job 101: First stringtie run...
+
+[Mon Jul 20 22:12:35 2020]
+Finished job 101.
+53 of 136 steps (39%) done
+
+[Mon Jul 20 22:12:35 2020]
+Job 117: First stringtie run...
+
+[Mon Jul 20 22:12:45 2020]
+Finished job 117.
+54 of 136 steps (40%) done
+
+[Mon Jul 20 22:12:45 2020]
+Job 132: First stringtie run...
+
+[Mon Jul 20 22:12:55 2020]
+Finished job 132.
+55 of 136 steps (40%) done
+
+[Mon Jul 20 22:12:55 2020]
+Job 121: First stringtie run...
+
+[Mon Jul 20 22:13:03 2020]
+Finished job 121.
+56 of 136 steps (41%) done
+
+[Mon Jul 20 22:13:03 2020]
+Job 112: First stringtie run...
+
+[Mon Jul 20 22:13:13 2020]
+Finished job 112.
+57 of 136 steps (42%) done
+
+[Mon Jul 20 22:13:13 2020]
+Job 77: First stringtie run...
+
+[Mon Jul 20 22:13:20 2020]
+Finished job 77.
+58 of 136 steps (43%) done
+
+[Mon Jul 20 22:13:20 2020]
+Job 127: First stringtie run...
+
+[Mon Jul 20 22:13:28 2020]
+Finished job 127.
+59 of 136 steps (43%) done
+
+[Mon Jul 20 22:13:28 2020]
+Job 131: First stringtie run...
+
+[Mon Jul 20 22:13:36 2020]
+Finished job 131.
+60 of 136 steps (44%) done
+
+[Mon Jul 20 22:13:36 2020]
+Job 102: First stringtie run...
+
+[Mon Jul 20 22:13:43 2020]
+Finished job 102.
+61 of 136 steps (45%) done
+
+[Mon Jul 20 22:13:43 2020]
+Job 80: First stringtie run...
+
+[Mon Jul 20 22:13:50 2020]
+Finished job 80.
+62 of 136 steps (46%) done
+
+[Mon Jul 20 22:13:50 2020]
+Job 76: First stringtie run...
+
+[Mon Jul 20 22:13:57 2020]
+Finished job 76.
+63 of 136 steps (46%) done
+
+[Mon Jul 20 22:13:57 2020]
+Job 91: First stringtie run...
+
+[Mon Jul 20 22:14:05 2020]
+Finished job 91.
+64 of 136 steps (47%) done
+
+[Mon Jul 20 22:14:05 2020]
+Job 95: First stringtie run...
+
+[Mon Jul 20 22:14:12 2020]
+Finished job 95.
+65 of 136 steps (48%) done
+
+[Mon Jul 20 22:14:12 2020]
+Job 110: First stringtie run...
+
+[Mon Jul 20 22:14:19 2020]
+Finished job 110.
+66 of 136 steps (49%) done
+
+[Mon Jul 20 22:14:19 2020]
+Job 97: First stringtie run...
+
+[Mon Jul 20 22:14:25 2020]
+Finished job 97.
+67 of 136 steps (49%) done
+
+[Mon Jul 20 22:14:25 2020]
+Job 68: Merging Transcripts...
+
+[Mon Jul 20 22:14:52 2020]
+Finished job 68.
+68 of 136 steps (50%) done
+
+[Mon Jul 20 22:14:52 2020]
+Job 19: Second stringtie run...
+
+[Mon Jul 20 22:17:18 2020]
+Finished job 19.
+69 of 136 steps (51%) done
+
+[Mon Jul 20 22:17:18 2020]
+Job 47: Second stringtie run...
+
+[Mon Jul 20 22:18:53 2020]
+Finished job 47.
+70 of 136 steps (51%) done
+
+[Mon Jul 20 22:18:53 2020]
+Job 41: Second stringtie run...
+
+[Mon Jul 20 22:20:44 2020]
+Finished job 41.
+71 of 136 steps (52%) done
+
+[Mon Jul 20 22:20:44 2020]
+Job 15: Second stringtie run...
+
+[Mon Jul 20 22:22:26 2020]
+Finished job 15.
+72 of 136 steps (53%) done
+
+[Mon Jul 20 22:22:26 2020]
+Job 23: Second stringtie run...
+
+[Mon Jul 20 22:24:12 2020]
+Finished job 23.
+73 of 136 steps (54%) done
+
+[Mon Jul 20 22:24:12 2020]
+Job 27: Second stringtie run...
+
+[Mon Jul 20 22:25:35 2020]
+Finished job 27.
+74 of 136 steps (54%) done
+
+[Mon Jul 20 22:25:35 2020]
+Job 62: Second stringtie run...
+
+[Mon Jul 20 22:26:55 2020]
+Finished job 62.
+75 of 136 steps (55%) done
+
+[Mon Jul 20 22:26:55 2020]
+Job 35: Second stringtie run...
+
+[Mon Jul 20 22:28:13 2020]
+Finished job 35.
+76 of 136 steps (56%) done
+
+[Mon Jul 20 22:28:13 2020]
+Job 7: Second stringtie run...
+
+[Mon Jul 20 22:29:43 2020]
+Finished job 7.
+77 of 136 steps (57%) done
+
+[Mon Jul 20 22:29:43 2020]
+Job 18: Second stringtie run...
+
+[Mon Jul 20 22:31:03 2020]
+Finished job 18.
+78 of 136 steps (57%) done
+
+[Mon Jul 20 22:31:03 2020]
+Job 59: Second stringtie run...
+
+[Mon Jul 20 22:32:14 2020]
+Finished job 59.
+79 of 136 steps (58%) done
+
+[Mon Jul 20 22:32:14 2020]
+Job 22: Second stringtie run...
+
+[Mon Jul 20 22:33:43 2020]
+Finished job 22.
+80 of 136 steps (59%) done
+
+[Mon Jul 20 22:33:43 2020]
+Job 12: Second stringtie run...
+
+[Mon Jul 20 22:35:13 2020]
+Finished job 12.
+81 of 136 steps (60%) done
+
+[Mon Jul 20 22:35:13 2020]
+Job 36: Second stringtie run...
+
+[Mon Jul 20 22:36:17 2020]
+Finished job 36.
+82 of 136 steps (60%) done
+
+[Mon Jul 20 22:36:17 2020]
+Job 56: Second stringtie run...
+
+[Mon Jul 20 22:37:24 2020]
+Finished job 56.
+83 of 136 steps (61%) done
+
+[Mon Jul 20 22:37:24 2020]
+Job 14: Second stringtie run...
+
+[Mon Jul 20 22:38:28 2020]
+Finished job 14.
+84 of 136 steps (62%) done
+
+[Mon Jul 20 22:38:28 2020]
+Job 33: Second stringtie run...
+
+[Mon Jul 20 22:39:50 2020]
+Finished job 33.
+85 of 136 steps (62%) done
+
+[Mon Jul 20 22:39:50 2020]
+Job 9: Second stringtie run...
+
+[Mon Jul 20 22:41:05 2020]
+Finished job 9.
+86 of 136 steps (63%) done
+
+[Mon Jul 20 22:41:05 2020]
+Job 37: Second stringtie run...
+
+[Mon Jul 20 22:42:08 2020]
+Finished job 37.
+87 of 136 steps (64%) done
+
+[Mon Jul 20 22:42:08 2020]
+Job 51: Second stringtie run...
+
+[Mon Jul 20 22:43:07 2020]
+Finished job 51.
+88 of 136 steps (65%) done
+
+[Mon Jul 20 22:43:07 2020]
+Job 16: Second stringtie run...
+
+[Mon Jul 20 22:44:14 2020]
+Finished job 16.
+89 of 136 steps (65%) done
+
+[Mon Jul 20 22:44:14 2020]
+Job 66: Second stringtie run...
+
+[Mon Jul 20 22:45:21 2020]
+Finished job 66.
+90 of 136 steps (66%) done
+
+[Mon Jul 20 22:45:21 2020]
+Job 54: Second stringtie run...
+
+[Mon Jul 20 22:46:25 2020]
+Finished job 54.
+91 of 136 steps (67%) done
+
+[Mon Jul 20 22:46:25 2020]
+Job 53: Second stringtie run...
+
+[Mon Jul 20 22:47:14 2020]
+Finished job 53.
+92 of 136 steps (68%) done
+
+[Mon Jul 20 22:47:14 2020]
+Job 20: Second stringtie run...
+
+[Mon Jul 20 22:48:13 2020]
+Finished job 20.
+93 of 136 steps (68%) done
+
+[Mon Jul 20 22:48:13 2020]
+Job 39: Second stringtie run...
+
+[Mon Jul 20 22:49:09 2020]
+Finished job 39.
+94 of 136 steps (69%) done
+
+[Mon Jul 20 22:49:09 2020]
+Job 63: Second stringtie run...
+
+[Mon Jul 20 22:49:57 2020]
+Finished job 63.
+95 of 136 steps (70%) done
+
+[Mon Jul 20 22:49:57 2020]
+Job 5: Second stringtie run...
+
+[Mon Jul 20 22:50:37 2020]
+Finished job 5.
+96 of 136 steps (71%) done
+
+[Mon Jul 20 22:50:37 2020]
+Job 25: Second stringtie run...
+
+[Mon Jul 20 22:51:20 2020]
+Finished job 25.
+97 of 136 steps (71%) done
+
+[Mon Jul 20 22:51:20 2020]
+Job 8: Second stringtie run...
+
+[Mon Jul 20 22:52:02 2020]
+Finished job 8.
+98 of 136 steps (72%) done
+
+[Mon Jul 20 22:52:02 2020]
+Job 42: Second stringtie run...
+
+[Mon Jul 20 22:52:46 2020]
+Finished job 42.
+99 of 136 steps (73%) done
+
+[Mon Jul 20 22:52:46 2020]
+Job 3: Second stringtie run...
+
+[Mon Jul 20 22:53:13 2020]
+Finished job 3.
+100 of 136 steps (74%) done
+
+[Mon Jul 20 22:53:13 2020]
+Job 21: Second stringtie run...
+
+[Mon Jul 20 22:53:45 2020]
+Finished job 21.
+101 of 136 steps (74%) done
+
+[Mon Jul 20 22:53:45 2020]
+Job 45: Second stringtie run...
+
+[Mon Jul 20 22:54:17 2020]
+Finished job 45.
+102 of 136 steps (75%) done
+
+[Mon Jul 20 22:54:17 2020]
+Job 11: Second stringtie run...
+
+[Mon Jul 20 22:54:49 2020]
+Finished job 11.
+103 of 136 steps (76%) done
+
+[Mon Jul 20 22:54:49 2020]
+Job 31: Second stringtie run...
+
+[Mon Jul 20 22:55:19 2020]
+Finished job 31.
+104 of 136 steps (76%) done
+
+[Mon Jul 20 22:55:19 2020]
+Job 49: Second stringtie run...
+
+[Mon Jul 20 22:55:49 2020]
+Finished job 49.
+105 of 136 steps (77%) done
+
+[Mon Jul 20 22:55:49 2020]
+Job 61: Second stringtie run...
+
+[Mon Jul 20 22:56:16 2020]
+Finished job 61.
+106 of 136 steps (78%) done
+
+[Mon Jul 20 22:56:16 2020]
+Job 52: Second stringtie run...
+
+[Mon Jul 20 22:56:39 2020]
+Finished job 52.
+107 of 136 steps (79%) done
+
+[Mon Jul 20 22:56:39 2020]
+Job 46: Second stringtie run...
+
+[Mon Jul 20 22:57:05 2020]
+Finished job 46.
+108 of 136 steps (79%) done
+
+[Mon Jul 20 22:57:05 2020]
+Job 10: Second stringtie run...
+
+[Mon Jul 20 22:57:29 2020]
+Finished job 10.
+109 of 136 steps (80%) done
+
+[Mon Jul 20 22:57:29 2020]
+Job 60: Second stringtie run...
+
+[Mon Jul 20 22:57:49 2020]
+Finished job 60.
+110 of 136 steps (81%) done
+
+[Mon Jul 20 22:57:49 2020]
+Job 17: Second stringtie run...
+
+[Mon Jul 20 22:58:12 2020]
+Finished job 17.
+111 of 136 steps (82%) done
+
+[Mon Jul 20 22:58:12 2020]
+Job 55: Second stringtie run...
+
+[Mon Jul 20 22:58:33 2020]
+Finished job 55.
+112 of 136 steps (82%) done
+
+[Mon Jul 20 22:58:33 2020]
+Job 50: Second stringtie run...
+
+[Mon Jul 20 22:58:54 2020]
+Finished job 50.
+113 of 136 steps (83%) done
+
+[Mon Jul 20 22:58:54 2020]
+Job 64: Second stringtie run...
+
+[Mon Jul 20 22:59:14 2020]
+Finished job 64.
+114 of 136 steps (84%) done
+
+[Mon Jul 20 22:59:14 2020]
+Job 13: Second stringtie run...
+
+[Mon Jul 20 22:59:34 2020]
+Finished job 13.
+115 of 136 steps (85%) done
+
+[Mon Jul 20 22:59:34 2020]
+Job 32: Second stringtie run...
+
+[Mon Jul 20 22:59:50 2020]
+Finished job 32.
+116 of 136 steps (85%) done
+
+[Mon Jul 20 22:59:50 2020]
+Job 48: Second stringtie run...
+
+[Mon Jul 20 23:00:05 2020]
+Finished job 48.
+117 of 136 steps (86%) done
+
+[Mon Jul 20 23:00:05 2020]
+Job 30: Second stringtie run...
+
+[Mon Jul 20 23:00:21 2020]
+Finished job 30.
+118 of 136 steps (87%) done
+
+[Mon Jul 20 23:00:21 2020]
+Job 28: Second stringtie run...
+
+[Mon Jul 20 23:00:37 2020]
+Finished job 28.
+119 of 136 steps (88%) done
+
+[Mon Jul 20 23:00:37 2020]
+Job 26: Second stringtie run...
+
+[Mon Jul 20 23:00:53 2020]
+Finished job 26.
+120 of 136 steps (88%) done
+
+[Mon Jul 20 23:00:53 2020]
+Job 44: Second stringtie run...
+
+[Mon Jul 20 23:01:06 2020]
+Finished job 44.
+121 of 136 steps (89%) done
+
+[Mon Jul 20 23:01:06 2020]
+Job 34: Second stringtie run...
+
+[Mon Jul 20 23:01:20 2020]
+Finished job 34.
+122 of 136 steps (90%) done
+
+[Mon Jul 20 23:01:20 2020]
+Job 65: Second stringtie run...
+
+[Mon Jul 20 23:01:33 2020]
+Finished job 65.
+123 of 136 steps (90%) done
+
+[Mon Jul 20 23:01:33 2020]
+Job 4: Second stringtie run...
+
+[Mon Jul 20 23:01:47 2020]
+Finished job 4.
+124 of 136 steps (91%) done
+
+[Mon Jul 20 23:01:47 2020]
+Job 43: Second stringtie run...
+
+[Mon Jul 20 23:02:01 2020]
+Finished job 43.
+125 of 136 steps (92%) done
+
+[Mon Jul 20 23:02:01 2020]
+Job 2: Second stringtie run...
+
+[Mon Jul 20 23:02:13 2020]
+Finished job 2.
+126 of 136 steps (93%) done
+
+[Mon Jul 20 23:02:13 2020]
+Job 58: Second stringtie run...
+
+[Mon Jul 20 23:02:26 2020]
+Finished job 58.
+127 of 136 steps (93%) done
+
+[Mon Jul 20 23:02:26 2020]
+Job 1: Second stringtie run...
+
+[Mon Jul 20 23:02:39 2020]
+Finished job 1.
+128 of 136 steps (94%) done
+
+[Mon Jul 20 23:02:39 2020]
+Job 6: Second stringtie run...
+
+[Mon Jul 20 23:02:51 2020]
+Finished job 6.
+129 of 136 steps (95%) done
+
+[Mon Jul 20 23:02:51 2020]
+Job 24: Second stringtie run...
+
+[Mon Jul 20 23:03:03 2020]
+Finished job 24.
+130 of 136 steps (96%) done
+
+[Mon Jul 20 23:03:03 2020]
+Job 67: Second stringtie run...
+
+[Mon Jul 20 23:03:15 2020]
+Finished job 67.
+131 of 136 steps (96%) done
+
+[Mon Jul 20 23:03:15 2020]
+Job 57: Second stringtie run...
+
+[Mon Jul 20 23:03:27 2020]
+Finished job 57.
+132 of 136 steps (97%) done
+
+[Mon Jul 20 23:03:27 2020]
+Job 40: Second stringtie run...
+
+[Mon Jul 20 23:03:37 2020]
+Finished job 40.
+133 of 136 steps (98%) done
+
+[Mon Jul 20 23:03:37 2020]
+Job 29: Second stringtie run...
+
+[Mon Jul 20 23:03:48 2020]
+Finished job 29.
+134 of 136 steps (99%) done
+
+[Mon Jul 20 23:03:48 2020]
+Job 38: Second stringtie run...
+
+[Mon Jul 20 23:03:57 2020]
+Finished job 38.
+135 of 136 steps (99%) done
+
+[Mon Jul 20 23:03:57 2020]
+localrule all:
+    input: /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090055_masked_primary/ERX1090055_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090059_masked_primary/ERX1090059_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090060_masked_primary/ERX1090060_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341659_masked_primary/ERX341659_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341660_masked_primary/ERX341660_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341661_masked_primary/ERX341661_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341664_masked_primary/ERX341664_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341665_masked_primary/ERX341665_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339203_masked_primary/SRX1339203_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339205_masked_primary/SRX1339205_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339207_masked_primary/SRX1339207_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339210_masked_primary/SRX1339210_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339212_masked_primary/SRX1339212_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339216_masked_primary/SRX1339216_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339217_masked_primary/SRX1339217_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339222_masked_primary/SRX1339222_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702703_masked_primary/SRX702703_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702705_masked_primary/SRX702705_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702707_masked_primary/SRX702707_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702708_masked_primary/SRX702708_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702710_masked_primary/SRX702710_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702713_masked_primary/SRX702713_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702714_masked_primary/SRX702714_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702715_masked_primary/SRX702715_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702718_masked_primary/SRX702718_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702721_masked_primary/SRX702721_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702722_masked_primary/SRX702722_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702723_masked_primary/SRX702723_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702724_masked_primary/SRX702724_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702726_masked_primary/SRX702726_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702727_masked_primary/SRX702727_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702728_masked_primary/SRX702728_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702730_masked_primary/SRX702730_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702733_masked_primary/SRX702733_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341658_masked_primary/ERX341658_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090056_masked_primary/ERX1090056_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090057_masked_primary/ERX1090057_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090058_masked_primary/ERX1090058_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX1090061_masked_primary/ERX1090061_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341662_masked_primary/ERX341662_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/ERX341663_masked_primary/ERX341663_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339202_masked_primary/SRX1339202_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702701_masked_primary/SRX702701_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339204_masked_primary/SRX1339204_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339206_masked_primary/SRX1339206_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702702_masked_primary/SRX702702_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339208_masked_primary/SRX1339208_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339209_masked_primary/SRX1339209_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702704_masked_primary/SRX702704_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339211_masked_primary/SRX1339211_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339218_masked_primary/SRX1339218_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702706_masked_primary/SRX702706_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702709_masked_primary/SRX702709_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339219_masked_primary/SRX1339219_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339221_masked_primary/SRX1339221_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339223_masked_primary/SRX1339223_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702711_masked_primary/SRX702711_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX1339224_masked_primary/SRX1339224_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702712_masked_primary/SRX702712_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702716_masked_primary/SRX702716_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702717_masked_primary/SRX702717_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702719_masked_primary/SRX702719_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702720_masked_primary/SRX702720_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702725_masked_primary/SRX702725_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702729_masked_primary/SRX702729_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702731_masked_primary/SRX702731_masked_primary_ST2_2nd.gtf, /dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie2/stringtie2_2nd/SRX702732_masked_primary/SRX702732_masked_primary_ST2_2nd.gtf
+    jobid: 0
+
+[Mon Jul 20 23:03:57 2020]
+Finished job 0.
+136 of 136 steps (100%) done
+Complete log: /home/gmoney/Code/moth/moth/annotation/.snakemake/log/2020-07-20T213515.203854.snakemake.log

@@ -1,0 +1,2 @@
+SyntaxError in line 24 of /home/gmoney/Code/moth/moth/annotation/run_stringtie:
+Unexpected keyword expand in rule definition (run_stringtie, line 24)

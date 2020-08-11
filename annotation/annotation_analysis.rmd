@@ -1,0 +1,136 @@
+---
+title: "Moth annotation compare"
+author: "G$"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: xelatex
+  html_notebook: default
+  html_document:
+    df_print: paged
+  geometry: left=.5in,right=.5in,top=.5in,bottom=.5in
+mainfont: DejaVu Sans
+titlefont: DejaVu Sans
+---
+
+```{r setup, eval=TRUE, include=FALSE, cache=F, message=F, warning=F}
+#rm(list=ls());gc()
+#knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE, 
+                      message = FALSE, cache.lazy = FALSE, fig.align='center')
+options(scipen=999)
+figs="/uru/Data/Nanopore/projects/moth/2020_analysis/figures"
+library(tidyverse)
+library(cowplot)
+```
+
+
+```{r genes, include=F}
+ref <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/ncbi_reference/GCF_000262585.1_Msex_1.0_genomic.gff", skip = 8, col_names = F) %>%
+  filter(X3 == "CDS") %>%
+  separate(X9, sep = ";", into = c("ID", "parent","ref"), extra = "warn", fill = "warn") %>%
+  mutate(ID = str_remove(ID, "ID=")) %>%
+  mutate(length = X5 - X4) %>%
+  mutate(asm = "old") %>%
+  dplyr::select(ID, length, asm)
+
+asm <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/FINAL/Stringtie_liftoff_merged.gff", skip = 2, col_names = F) %>%
+  filter(X3 == "CDS") %>%
+  separate(X9, sep = ";", into = c("ID", "parent","ref"), extra = "warn", fill = "warn") %>%
+  mutate(ID = str_remove(ID, "ID=")) %>%
+  mutate(length = X5 - X4) %>%
+  mutate(asm = "new") %>%
+  dplyr::select(ID, length, asm)
+
+cds <- rbind(asm,ref)
+
+color = c("#E69F00", "darkmagenta")
+p1 <- ggplot(data = cds, aes(x = length, fill = asm))+geom_histogram(bins = 100)+xlim(0,2000)+theme_bw()+scale_fill_manual(values=c(color))
+
+#ggsave(paste0(figs, "/CDS_length.pdf"), p1, height = 3, width = 5)
+```
+
+```{r trscripts, include=F}
+ref <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/ncbi_reference/GCF_000262585.1_Msex_1.0_genomic.gff", skip = 8, col_names = F) %>%
+  filter(X3 == "mRNA") %>%
+  separate(X9, sep = ";", into = c("ID", "parent","ref"), extra = "warn", fill = "warn") %>%
+  mutate(ID = str_remove(ID, "ID=")) %>%
+  dplyr::select(ID, parent) %>%
+  group_by(parent) %>%
+  add_tally() %>%
+  mutate(n=replace(n, n>4, "Greater"))%>%
+  dplyr::select(parent, n) %>%
+  distinct() %>%
+  ungroup() %>%
+  group_by(n) %>%
+  dplyr::summarize(percent = n()) %>%
+  mutate(percent = percent/(sum(percent))*100) %>%
+  mutate(asm = "old")
+
+asm <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/FINAL/Stringtie_liftoff_merged.gff", skip = 2, col_names = F)%>%
+  filter(X3 == "mRNA") %>%
+  separate(X9, sep = ";", into = c("ID", "parent","ref"), extra = "warn", fill = "warn") %>%
+  mutate(ID = str_remove(ID, "ID=")) %>%
+  dplyr::select(ID, parent) %>%
+  group_by(parent) %>%
+  add_tally() %>%
+  mutate(n=replace(n, n>4, "Greater"))%>%
+  dplyr::select(parent, n) %>%
+  distinct() %>%
+  ungroup() %>%
+  group_by(n) %>%
+  dplyr::summarize(percent = n()) %>%
+  mutate(percent = percent/(sum(percent))*100) %>%
+  mutate(asm = "new")
+
+counts <- rbind(asm, ref) %>%
+  mutate(n = as.factor(n))
+p2 <- ggplot(data = counts, aes(x = n, y = percent, fill = asm))+geom_bar(position = "dodge", stat = "identity")+theme_bw()+scale_fill_manual(values=c(color))
+#ggsave(paste0(figs, "/trans_per_gene.pdf"), p2, height = 3, width = 5)
+```
+
+```{r repeats, include=F}
+reps <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/annotation/repeats/compare_assemblies.txt") %>%
+  filter((`repeat` != "Total"))
+
+#%>%
+  #filter(`repeat` == "SINE" | `repeat` == "LINE" | `repeat` == "LTR" |`repeat` ==  "Unclassified"| `repeat` ==  "Total")
+
+reps <- as.data.frame(reps)
+reps <- melt(reps, id.vars = "repeat", variable.name = "Type", value.name = "percent")
+reps$variable <- ordered(reps$variable, levels = c("old", "new"))
+
+p3 <- ggplot(data = reps, aes(x = `repeat`, y = value, fill = variable))+geom_bar(position = "dodge", stat = "identity")+theme_bw()+scale_fill_manual(values=c(color))
+
+ggsave(paste0(figs, "/repeats.pdf"), p3, height = 3, width = 5)
+```
+
+```{r aligments, include=F}
+alns <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/compare_alignments.txt") %>%
+  mutate(order = row_number())
+
+alns <- as.data.frame(alns)
+alns <- melt(alns, id.vars = c("lib_type", "SRA", "description", "Library_name", "order"), variable.name = "Type", value.name = "percent")
+
+delta <- alns %>%
+  arrange(SRA, variable) %>%
+  group_by(SRA) %>%
+  mutate(delta = value - first(x = value)) %>%
+  mutate(delta = delta*(-1)) %>%
+  filter(variable == "old_asm") %>%
+  group_by(lib_type) %>% 
+  summarise(mean(delta))
+  
+  
+  
+p5 <- ggplot(alns, aes(x = order, y = value, color = variable))+geom_point()+theme_bw()+scale_fill_manual(values=c(color))
+
+p4 <- ggplot(data = alns, aes(x = variable, y = value, fill = variable))+geom_boxplot()+theme_bw()+scale_fill_manual(values=c(color))+facet_wrap(~lib_type)
+
+#ggsave(paste0(figs, "/RNA_alignments_point_wide.pdf"), p5, height = 3, width = 15)
+```
+
+

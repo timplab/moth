@@ -1,0 +1,622 @@
+Building DAG of jobs...
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090055_masked_primary/ERX1090055_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090059_masked_primary/ERX1090059_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090060_masked_primary/ERX1090060_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341659_masked_primary/ERX341659_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341660_masked_primary/ERX341660_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341661_masked_primary/ERX341661_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341664_masked_primary/ERX341664_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341665_masked_primary/ERX341665_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339203_masked_primary/SRX1339203_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339205_masked_primary/SRX1339205_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339207_masked_primary/SRX1339207_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339210_masked_primary/SRX1339210_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339212_masked_primary/SRX1339212_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339216_masked_primary/SRX1339216_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339217_masked_primary/SRX1339217_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339222_masked_primary/SRX1339222_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702703_masked_primary/SRX702703_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702705_masked_primary/SRX702705_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702707_masked_primary/SRX702707_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702708_masked_primary/SRX702708_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702710_masked_primary/SRX702710_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702713_masked_primary/SRX702713_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702714_masked_primary/SRX702714_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702715_masked_primary/SRX702715_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702718_masked_primary/SRX702718_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702721_masked_primary/SRX702721_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702722_masked_primary/SRX702722_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702723_masked_primary/SRX702723_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702724_masked_primary/SRX702724_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702726_masked_primary/SRX702726_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702727_masked_primary/SRX702727_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702728_masked_primary/SRX702728_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702730_masked_primary/SRX702730_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702733_masked_primary/SRX702733_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341658_masked_primary/ERX341658_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090056_masked_primary/ERX1090056_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090057_masked_primary/ERX1090057_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090058_masked_primary/ERX1090058_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090061_masked_primary/ERX1090061_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341662_masked_primary/ERX341662_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341663_masked_primary/ERX341663_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339202_masked_primary/SRX1339202_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702701_masked_primary/SRX702701_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339204_masked_primary/SRX1339204_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339206_masked_primary/SRX1339206_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702702_masked_primary/SRX702702_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339208_masked_primary/SRX1339208_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339209_masked_primary/SRX1339209_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702704_masked_primary/SRX702704_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339211_masked_primary/SRX1339211_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339218_masked_primary/SRX1339218_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702706_masked_primary/SRX702706_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702709_masked_primary/SRX702709_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339219_masked_primary/SRX1339219_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339221_masked_primary/SRX1339221_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339223_masked_primary/SRX1339223_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702711_masked_primary/SRX702711_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339224_masked_primary/SRX1339224_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702712_masked_primary/SRX702712_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702716_masked_primary/SRX702716_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702717_masked_primary/SRX702717_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702719_masked_primary/SRX702719_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702720_masked_primary/SRX702720_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702725_masked_primary/SRX702725_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702729_masked_primary/SRX702729_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702731_masked_primary/SRX702731_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702732_masked_primary/SRX702732_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341659_masked_primary/ERX341659_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702709_masked_primary/SRX702709_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702702_masked_primary/SRX702702_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341665_masked_primary/ERX341665_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702729_masked_primary/SRX702729_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702708_masked_primary/SRX702708_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339211_masked_primary/SRX1339211_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702713_masked_primary/SRX702713_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702703_masked_primary/SRX702703_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090061_masked_primary/ERX1090061_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339218_masked_primary/SRX1339218_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702731_masked_primary/SRX702731_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339212_masked_primary/SRX1339212_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090059_masked_primary/ERX1090059_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702721_masked_primary/SRX702721_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339216_masked_primary/SRX1339216_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702715_masked_primary/SRX702715_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702722_masked_primary/SRX702722_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090058_masked_primary/ERX1090058_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339217_masked_primary/SRX1339217_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090060_masked_primary/ERX1090060_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341664_masked_primary/ERX341664_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702701_masked_primary/SRX702701_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339209_masked_primary/SRX1339209_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339205_masked_primary/SRX1339205_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702706_masked_primary/SRX702706_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702719_masked_primary/SRX702719_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702712_masked_primary/SRX702712_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702714_masked_primary/SRX702714_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339219_masked_primary/SRX1339219_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702723_masked_primary/SRX702723_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702720_masked_primary/SRX702720_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090055_masked_primary/ERX1090055_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702728_masked_primary/SRX702728_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339222_masked_primary/SRX1339222_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339202_masked_primary/SRX1339202_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339210_masked_primary/SRX1339210_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702705_masked_primary/SRX702705_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702732_masked_primary/SRX702732_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702730_masked_primary/SRX702730_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341663_masked_primary/ERX341663_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339221_masked_primary/SRX1339221_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090056_masked_primary/ERX1090056_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702726_masked_primary/SRX702726_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341661_masked_primary/ERX341661_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702718_masked_primary/SRX702718_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702707_masked_primary/SRX702707_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341662_masked_primary/ERX341662_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702717_masked_primary/SRX702717_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702710_masked_primary/SRX702710_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702716_masked_primary/SRX702716_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341658_masked_primary/ERX341658_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339208_masked_primary/SRX1339208_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339206_masked_primary/SRX1339206_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702725_masked_primary/SRX702725_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090057_masked_primary/ERX1090057_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339224_masked_primary/SRX1339224_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702704_masked_primary/SRX702704_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702727_masked_primary/SRX702727_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341660_masked_primary/ERX341660_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339223_masked_primary/SRX1339223_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702724_masked_primary/SRX702724_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702733_masked_primary/SRX702733_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702711_masked_primary/SRX702711_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339203_masked_primary/SRX1339203_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339204_masked_primary/SRX1339204_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+File path /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339207_masked_primary/SRX1339207_masked_primary_ST2.gtf contains double '/'. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	67	stringtie_short_1st
+	68
+
+[Fri Jul 24 00:04:34 2020]
+Job 55: First stringtie run...
+
+[Fri Jul 24 00:06:43 2020]
+Finished job 55.
+1 of 68 steps (1%) done
+
+[Fri Jul 24 00:06:43 2020]
+Job 15: First stringtie run...
+
+[Fri Jul 24 00:08:09 2020]
+Finished job 15.
+2 of 68 steps (3%) done
+
+[Fri Jul 24 00:08:09 2020]
+Job 27: First stringtie run...
+
+[Fri Jul 24 00:09:47 2020]
+Finished job 27.
+3 of 68 steps (4%) done
+
+[Fri Jul 24 00:09:47 2020]
+Job 18: First stringtie run...
+
+[Fri Jul 24 00:11:21 2020]
+Finished job 18.
+4 of 68 steps (6%) done
+
+[Fri Jul 24 00:11:21 2020]
+Job 44: First stringtie run...
+
+[Fri Jul 24 00:12:47 2020]
+Finished job 44.
+5 of 68 steps (7%) done
+
+[Fri Jul 24 00:12:47 2020]
+Job 62: First stringtie run...
+
+[Fri Jul 24 00:14:01 2020]
+Finished job 62.
+6 of 68 steps (9%) done
+
+[Fri Jul 24 00:14:01 2020]
+Job 31: First stringtie run...
+
+[Fri Jul 24 00:15:14 2020]
+Finished job 31.
+7 of 68 steps (10%) done
+
+[Fri Jul 24 00:15:14 2020]
+Job 32: First stringtie run...
+
+[Fri Jul 24 00:16:24 2020]
+Finished job 32.
+8 of 68 steps (12%) done
+
+[Fri Jul 24 00:16:24 2020]
+Job 17: First stringtie run...
+
+[Fri Jul 24 00:17:44 2020]
+Finished job 17.
+9 of 68 steps (13%) done
+
+[Fri Jul 24 00:17:44 2020]
+Job 49: First stringtie run...
+
+[Fri Jul 24 00:18:56 2020]
+Finished job 49.
+10 of 68 steps (15%) done
+
+[Fri Jul 24 00:18:56 2020]
+Job 28: First stringtie run...
+
+[Fri Jul 24 00:20:01 2020]
+Finished job 28.
+11 of 68 steps (16%) done
+
+[Fri Jul 24 00:20:01 2020]
+Job 59: First stringtie run...
+
+[Fri Jul 24 00:21:22 2020]
+Finished job 59.
+12 of 68 steps (18%) done
+
+[Fri Jul 24 00:21:22 2020]
+Job 2: First stringtie run...
+
+[Fri Jul 24 00:22:44 2020]
+Finished job 2.
+13 of 68 steps (19%) done
+
+[Fri Jul 24 00:22:44 2020]
+Job 50: First stringtie run...
+
+[Fri Jul 24 00:23:44 2020]
+Finished job 50.
+14 of 68 steps (21%) done
+
+[Fri Jul 24 00:23:44 2020]
+Job 63: First stringtie run...
+
+[Fri Jul 24 00:24:48 2020]
+Finished job 63.
+15 of 68 steps (22%) done
+
+[Fri Jul 24 00:24:48 2020]
+Job 64: First stringtie run...
+
+[Fri Jul 24 00:25:48 2020]
+Finished job 64.
+16 of 68 steps (24%) done
+
+[Fri Jul 24 00:25:48 2020]
+Job 26: First stringtie run...
+
+[Fri Jul 24 00:26:58 2020]
+Finished job 26.
+17 of 68 steps (25%) done
+
+[Fri Jul 24 00:26:58 2020]
+Job 12: First stringtie run...
+
+[Fri Jul 24 00:28:07 2020]
+Finished job 12.
+18 of 68 steps (26%) done
+
+[Fri Jul 24 00:28:07 2020]
+Job 46: First stringtie run...
+
+[Fri Jul 24 00:29:05 2020]
+Finished job 46.
+19 of 68 steps (28%) done
+
+[Fri Jul 24 00:29:05 2020]
+Job 23: First stringtie run...
+
+[Fri Jul 24 00:30:01 2020]
+Finished job 23.
+20 of 68 steps (29%) done
+
+[Fri Jul 24 00:30:01 2020]
+Job 9: First stringtie run...
+
+[Fri Jul 24 00:31:03 2020]
+Finished job 9.
+21 of 68 steps (31%) done
+
+[Fri Jul 24 00:31:03 2020]
+Job 40: First stringtie run...
+
+[Fri Jul 24 00:32:05 2020]
+Finished job 40.
+22 of 68 steps (32%) done
+
+[Fri Jul 24 00:32:05 2020]
+Job 34: First stringtie run...
+
+[Fri Jul 24 00:33:02 2020]
+Finished job 34.
+23 of 68 steps (34%) done
+
+[Fri Jul 24 00:33:02 2020]
+Job 3: First stringtie run...
+
+[Fri Jul 24 00:33:50 2020]
+Finished job 3.
+24 of 68 steps (35%) done
+
+[Fri Jul 24 00:33:50 2020]
+Job 5: First stringtie run...
+
+[Fri Jul 24 00:34:44 2020]
+Finished job 5.
+25 of 68 steps (37%) done
+
+[Fri Jul 24 00:34:44 2020]
+Job 29: First stringtie run...
+
+[Fri Jul 24 00:35:35 2020]
+Finished job 29.
+26 of 68 steps (38%) done
+
+[Fri Jul 24 00:35:35 2020]
+Job 51: First stringtie run...
+
+[Fri Jul 24 00:36:19 2020]
+Finished job 51.
+27 of 68 steps (40%) done
+
+[Fri Jul 24 00:36:19 2020]
+Job 47: First stringtie run...
+
+[Fri Jul 24 00:36:56 2020]
+Finished job 47.
+28 of 68 steps (41%) done
+
+[Fri Jul 24 00:36:56 2020]
+Job 39: First stringtie run...
+
+[Fri Jul 24 00:37:37 2020]
+Finished job 39.
+29 of 68 steps (43%) done
+
+[Fri Jul 24 00:37:37 2020]
+Job 6: First stringtie run...
+
+[Fri Jul 24 00:38:16 2020]
+Finished job 6.
+30 of 68 steps (44%) done
+
+[Fri Jul 24 00:38:16 2020]
+Job 8: First stringtie run...
+
+[Fri Jul 24 00:38:56 2020]
+Finished job 8.
+31 of 68 steps (46%) done
+
+[Fri Jul 24 00:38:56 2020]
+Job 38: First stringtie run...
+
+[Fri Jul 24 00:39:22 2020]
+Finished job 38.
+32 of 68 steps (47%) done
+
+[Fri Jul 24 00:39:22 2020]
+Job 58: First stringtie run...
+
+[Fri Jul 24 00:39:52 2020]
+Finished job 58.
+33 of 68 steps (49%) done
+
+[Fri Jul 24 00:39:52 2020]
+Job 60: First stringtie run...
+
+[Fri Jul 24 00:40:24 2020]
+Finished job 60.
+34 of 68 steps (50%) done
+
+[Fri Jul 24 00:40:24 2020]
+Job 1: First stringtie run...
+
+[Fri Jul 24 00:40:57 2020]
+Finished job 1.
+35 of 68 steps (51%) done
+
+[Fri Jul 24 00:40:57 2020]
+Job 52: First stringtie run...
+
+[Fri Jul 24 00:41:26 2020]
+Finished job 52.
+36 of 68 steps (53%) done
+
+[Fri Jul 24 00:41:26 2020]
+Job 4: First stringtie run...
+
+[Fri Jul 24 00:41:56 2020]
+Finished job 4.
+37 of 68 steps (54%) done
+
+[Fri Jul 24 00:41:56 2020]
+Job 45: First stringtie run...
+
+[Fri Jul 24 00:42:22 2020]
+Finished job 45.
+38 of 68 steps (56%) done
+
+[Fri Jul 24 00:42:22 2020]
+Job 43: First stringtie run...
+
+[Fri Jul 24 00:42:46 2020]
+Finished job 43.
+39 of 68 steps (57%) done
+
+[Fri Jul 24 00:42:46 2020]
+Job 22: First stringtie run...
+
+[Fri Jul 24 00:43:11 2020]
+Finished job 22.
+40 of 68 steps (59%) done
+
+[Fri Jul 24 00:43:11 2020]
+Job 48: First stringtie run...
+
+[Fri Jul 24 00:43:36 2020]
+Finished job 48.
+41 of 68 steps (60%) done
+
+[Fri Jul 24 00:43:36 2020]
+Job 56: First stringtie run...
+
+[Fri Jul 24 00:43:56 2020]
+Finished job 56.
+42 of 68 steps (62%) done
+
+[Fri Jul 24 00:43:56 2020]
+Job 41: First stringtie run...
+
+[Fri Jul 24 00:44:19 2020]
+Finished job 41.
+43 of 68 steps (63%) done
+
+[Fri Jul 24 00:44:19 2020]
+Job 33: First stringtie run...
+
+[Fri Jul 24 00:44:40 2020]
+Finished job 33.
+44 of 68 steps (65%) done
+
+[Fri Jul 24 00:44:40 2020]
+Job 19: First stringtie run...
+
+[Fri Jul 24 00:45:01 2020]
+Finished job 19.
+45 of 68 steps (66%) done
+
+[Fri Jul 24 00:45:01 2020]
+Job 14: First stringtie run...
+
+[Fri Jul 24 00:45:22 2020]
+Finished job 14.
+46 of 68 steps (68%) done
+
+[Fri Jul 24 00:45:22 2020]
+Job 66: First stringtie run...
+
+[Fri Jul 24 00:45:42 2020]
+Finished job 66.
+47 of 68 steps (69%) done
+
+[Fri Jul 24 00:45:42 2020]
+Job 10: First stringtie run...
+
+[Fri Jul 24 00:45:58 2020]
+Finished job 10.
+48 of 68 steps (71%) done
+
+[Fri Jul 24 00:45:58 2020]
+Job 21: First stringtie run...
+
+[Fri Jul 24 00:46:15 2020]
+Finished job 21.
+49 of 68 steps (72%) done
+
+[Fri Jul 24 00:46:15 2020]
+Job 25: First stringtie run...
+
+[Fri Jul 24 00:46:30 2020]
+Finished job 25.
+50 of 68 steps (74%) done
+
+[Fri Jul 24 00:46:30 2020]
+Job 16: First stringtie run...
+
+[Fri Jul 24 00:46:47 2020]
+Finished job 16.
+51 of 68 steps (75%) done
+
+[Fri Jul 24 00:46:47 2020]
+Job 57: First stringtie run...
+
+[Fri Jul 24 00:47:03 2020]
+Finished job 57.
+52 of 68 steps (76%) done
+
+[Fri Jul 24 00:47:03 2020]
+Job 42: First stringtie run...
+
+[Fri Jul 24 00:47:15 2020]
+Finished job 42.
+53 of 68 steps (78%) done
+
+[Fri Jul 24 00:47:15 2020]
+Job 11: First stringtie run...
+
+[Fri Jul 24 00:47:30 2020]
+Finished job 11.
+54 of 68 steps (79%) done
+
+[Fri Jul 24 00:47:30 2020]
+Job 13: First stringtie run...
+
+[Fri Jul 24 00:47:44 2020]
+Finished job 13.
+55 of 68 steps (81%) done
+
+[Fri Jul 24 00:47:44 2020]
+Job 36: First stringtie run...
+
+[Fri Jul 24 00:47:58 2020]
+Finished job 36.
+56 of 68 steps (82%) done
+
+[Fri Jul 24 00:47:58 2020]
+Job 24: First stringtie run...
+
+[Fri Jul 24 00:48:12 2020]
+Finished job 24.
+57 of 68 steps (84%) done
+
+[Fri Jul 24 00:48:12 2020]
+Job 35: First stringtie run...
+
+[Fri Jul 24 00:48:24 2020]
+Finished job 35.
+58 of 68 steps (85%) done
+
+[Fri Jul 24 00:48:24 2020]
+Job 30: First stringtie run...
+
+[Fri Jul 24 00:48:36 2020]
+Finished job 30.
+59 of 68 steps (87%) done
+
+[Fri Jul 24 00:48:36 2020]
+Job 65: First stringtie run...
+
+[Fri Jul 24 00:48:49 2020]
+Finished job 65.
+60 of 68 steps (88%) done
+
+[Fri Jul 24 00:48:49 2020]
+Job 61: First stringtie run...
+
+[Fri Jul 24 00:49:01 2020]
+Finished job 61.
+61 of 68 steps (90%) done
+
+[Fri Jul 24 00:49:01 2020]
+Job 67: First stringtie run...
+
+[Fri Jul 24 00:49:12 2020]
+Finished job 67.
+62 of 68 steps (91%) done
+
+[Fri Jul 24 00:49:12 2020]
+Job 54: First stringtie run...
+
+[Fri Jul 24 00:49:24 2020]
+Finished job 54.
+63 of 68 steps (93%) done
+
+[Fri Jul 24 00:49:24 2020]
+Job 53: First stringtie run...
+
+[Fri Jul 24 00:49:36 2020]
+Finished job 53.
+64 of 68 steps (94%) done
+
+[Fri Jul 24 00:49:36 2020]
+Job 7: First stringtie run...
+
+[Fri Jul 24 00:49:47 2020]
+Finished job 7.
+65 of 68 steps (96%) done
+
+[Fri Jul 24 00:49:47 2020]
+Job 37: First stringtie run...
+
+[Fri Jul 24 00:49:58 2020]
+Finished job 37.
+66 of 68 steps (97%) done
+
+[Fri Jul 24 00:49:58 2020]
+Job 20: First stringtie run...
+
+[Fri Jul 24 00:50:08 2020]
+Finished job 20.
+67 of 68 steps (99%) done
+
+[Fri Jul 24 00:50:08 2020]
+localrule all:
+    input: /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090055_masked_primary/ERX1090055_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090059_masked_primary/ERX1090059_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090060_masked_primary/ERX1090060_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341659_masked_primary/ERX341659_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341660_masked_primary/ERX341660_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341661_masked_primary/ERX341661_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341664_masked_primary/ERX341664_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341665_masked_primary/ERX341665_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339203_masked_primary/SRX1339203_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339205_masked_primary/SRX1339205_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339207_masked_primary/SRX1339207_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339210_masked_primary/SRX1339210_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339212_masked_primary/SRX1339212_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339216_masked_primary/SRX1339216_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339217_masked_primary/SRX1339217_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339222_masked_primary/SRX1339222_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702703_masked_primary/SRX702703_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702705_masked_primary/SRX702705_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702707_masked_primary/SRX702707_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702708_masked_primary/SRX702708_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702710_masked_primary/SRX702710_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702713_masked_primary/SRX702713_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702714_masked_primary/SRX702714_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702715_masked_primary/SRX702715_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702718_masked_primary/SRX702718_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702721_masked_primary/SRX702721_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702722_masked_primary/SRX702722_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702723_masked_primary/SRX702723_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702724_masked_primary/SRX702724_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702726_masked_primary/SRX702726_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702727_masked_primary/SRX702727_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702728_masked_primary/SRX702728_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702730_masked_primary/SRX702730_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702733_masked_primary/SRX702733_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341658_masked_primary/ERX341658_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090056_masked_primary/ERX1090056_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090057_masked_primary/ERX1090057_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090058_masked_primary/ERX1090058_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX1090061_masked_primary/ERX1090061_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341662_masked_primary/ERX341662_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/ERX341663_masked_primary/ERX341663_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339202_masked_primary/SRX1339202_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702701_masked_primary/SRX702701_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339204_masked_primary/SRX1339204_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339206_masked_primary/SRX1339206_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702702_masked_primary/SRX702702_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339208_masked_primary/SRX1339208_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339209_masked_primary/SRX1339209_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702704_masked_primary/SRX702704_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339211_masked_primary/SRX1339211_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339218_masked_primary/SRX1339218_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702706_masked_primary/SRX702706_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702709_masked_primary/SRX702709_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339219_masked_primary/SRX1339219_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339221_masked_primary/SRX1339221_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339223_masked_primary/SRX1339223_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702711_masked_primary/SRX702711_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX1339224_masked_primary/SRX1339224_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702712_masked_primary/SRX702712_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702716_masked_primary/SRX702716_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702717_masked_primary/SRX702717_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702719_masked_primary/SRX702719_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702720_masked_primary/SRX702720_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702725_masked_primary/SRX702725_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702729_masked_primary/SRX702729_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702731_masked_primary/SRX702731_masked_primary_ST2.gtf, /uru/Data/Nanopore/projects/moth/2020_analysis/expression//stringtie2/SRX702732_masked_primary/SRX702732_masked_primary_ST2.gtf
+    jobid: 0
+
+[Fri Jul 24 00:50:08 2020]
+Finished job 0.
+68 of 68 steps (100%) done
+Complete log: /home/gmoney/Code/moth/moth/expression/.snakemake/log/2020-07-24T000434.818414.snakemake.log

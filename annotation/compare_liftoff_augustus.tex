@@ -1,0 +1,165 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{DejaVu Sans}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Liftoff moth annotation},
+  pdfauthor={G\$},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{Liftoff moth annotation}
+\author{G\$}
+\date{July 21, 2020}
+
+\begin{document}
+\maketitle
+
+\hypertarget{running-liftoff}{%
+\section{Running liftoff}\label{running-liftoff}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Run Liftoff on moth annotations total features in reference gtf: 41110
+\item
+  liftoff gtf to new asm total features: 39957
+\item
+  There were 482 ``unmapped'' features
+\end{enumerate}
+
+\hypertarget{unmapped-features}{%
+\section{Unmapped features}\label{unmapped-features}}
+
+Overall the unmapped transcripts were shorter than the mapped
+transcripts and the contig sizes they were on in the original assembly
+were smaller. This leads us to believe they were not full length
+transcripts and were fragmented in some way.
+
+\begin{center}\includegraphics{compare_liftoff_augustus_files/figure-latex/plot-1} \end{center}
+\newpage
+
+\hypertarget{compare-liftoff-and-augustus-to-stringtie2-assemblies-from-rna-seq}{%
+\section{Compare liftoff and augustus to Stringtie2 assemblies from
+RNA-seq}\label{compare-liftoff-and-augustus-to-stringtie2-assemblies-from-rna-seq}}
+
+Liftoff annotations match RNA-seq data better than augustus. If Liftoff
+transcript is contained within the Stringtie assembled transcript (k)
+include Stringtie coordinates in final annotation with liftoff
+functional annotation. Look more into the ``u'', stringtie assembled
+transcripts that are not in the liftoff annotations
+
+\begin{center}\includegraphics{compare_liftoff_augustus_files/figure-latex/augusutus-1} \end{center}
+
+\includegraphics{/dilithium/Data/gmoney/analysis/moth/masked_annotation/stringtie_liftoff/gff_compare.png}
+
+\hypertarget{look-into-features-that-liftoff-could-not-map-n482}{%
+\section{Look into features that Liftoff could not map
+(n=482)}\label{look-into-features-that-liftoff-could-not-map-n482}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Take unmapped features from reference transcript sequences
+\item
+  Align Stringtie2 assembled transcripts to the unmapped features
+\item
+  Filter for MAPQ = 60
+\end{enumerate}
+
+\begin{center}\includegraphics{compare_liftoff_augustus_files/figure-latex/density-1} \end{center}
+
+545 transcripts map to 297 of the unmapped features. By plotting
+fraction of the length that mapped we can tell that the unmapped
+features are fragmented because a majority of the sequence maps to a
+portion of the Stringtie transcript.
+
+\hypertarget{look-into-the-stringtie-assembled-transcripts-that-are-not-in-the-liftoff-annotations}{%
+\section{Look into the Stringtie assembled transcripts that are not in
+the liftoff
+annotations}\label{look-into-the-stringtie-assembled-transcripts-that-are-not-in-the-liftoff-annotations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Filter the Stringtie transcripts that are ``u'' when compared to
+  liftoff transcripts
+\item
+  Compare the augustus gene predictions with the Stringtie ``u''
+  transcripts
+\item
+  794 Stringtie ``u'' transcripts overlap exactly with augustus gene
+  predictions
+\end{enumerate}
+
+\hypertarget{total-feature-count}{%
+\section{total feature count}\label{total-feature-count}}
+
+from liftoff: 39957
+
+from Stringtie mapped to unmapped reference features: 545
+
+from Stringtie/augustus exact overlaps not in reference: 794
+
+Total features: 41296
+
+Total features in old asm: 41110
+
+\end{document}

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 26 of /home/gmoney/Code/moth/moth/annotation/run_stringtie:
+Missing input files for rule stringtie_short_1st:
+/uru/Data/Nanopore/projects/moth/2020_analysis/sra_rna_data/bam/maskedSRX702716_masked_primary.bam

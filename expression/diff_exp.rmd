@@ -1,0 +1,101 @@
+---
+title: "Diff exp"
+author: "G$"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document: default
+  html_notebook: default
+mainfont: DejaVu Sans
+titlefont: DejaVu Sans
+---
+
+```{r setup, eval=TRUE, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+rm(list=ls());gc()
+#knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE,
+                      message = FALSE, cache.lazy = FALSE)
+my_plot_hook <- function(x, options)
+  paste("\n", knitr::hook_plot_tex(x, options), "\n")
+knitr::knit_hooks$set(plot = my_plot_hook)
+library(tidyverse)
+library(pheatmap)
+```
+
+
+
+```{r data, include =F}
+path = "/uru/Data/Nanopore/projects/moth/2020_analysis/expression/stringtie2"
+local <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/expression/stringtie2_combined/path_to_files.txt", col_names  = F)
+local$X2 <- sub('\\.{1}', '', local$X2)
+initial <- read_tsv(paste0(path, local$X2[1]), skip = 2, col_names = F) %>%
+  dplyr::filter(X3 == "transcript") %>%
+  separate(X9, sep = ";", into = c("gene_id", "transcript_id", "gene_name", "cov", "fpkm", "tpm"), extra = "warn", fill = "warn") %>%
+  mutate(gene_id = str_remove(gene_id, "gene_id \"gene-")) %>%
+  mutate(gene_id = str_remove(gene_id, "gene_id")) %>%
+  mutate("gene_id" = gsub('"', '', gene_id)) %>%
+  mutate(transcript_id = str_remove(transcript_id, "transcript_id \"transcript-")) %>%
+  mutate(transcript_id = str_remove(transcript_id, "transcript_id")) %>%
+  mutate("transcript_id" = gsub('"', '', transcript_id)) %>%
+  dplyr::select(gene_id,transcript_id)
+
+for (i in (1:length(local$X2))){
+  name = local$X1[i]
+  print(i)
+  print(name)
+  dat <- read_tsv(paste0(path, local$X2[i]), skip = 2, col_names = F) %>%
+  dplyr::filter(X3 == "transcript") %>%
+  separate(X9, sep = ";", into = c("gene_id", "transcript_id", "gene_name", "cov", "fpkm", "tpm"), extra = "warn", fill = "warn") %>%
+  mutate(gene_name = str_remove(tpm, "TPM")) %>%
+  mutate("tpm" = gsub('"', '', gene_name)) %>%
+  dplyr::select(tpm)
+  
+  colnames(dat) <- name
+  
+  initial <- cbind(initial, dat)
+}
+
+```
+
+```{r myosin, include =F}
+pheno <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/expression/stringtie2_combined/phenotype.tsv", skip = 1, col_names = F)
+
+myo <- read_tsv("/uru/Data/Nanopore/projects/moth/2020_analysis/expression/stringtie2_combined/modular_SPs.txt", col_names = F)
+
+
+#adult <- pheno %>%
+#  dplyr::filter(X3 != "head")
+#
+#myo_tpm <- initial %>%
+#  mutate(transcript_id = str_trim(transcript_id)) %>%
+#  filter(transcript_id %in% myo$X1) %>%
+#  dplyr::select(-c(gene_id)) %>%
+#  column_to_rownames(var = "transcript_id") #%>%
+#  dplyr::select(-c(adult$X6))
+#  
+```
+
+```{r heatmap, echo =T, fig.height=20, fig.width=20}
+mat <- apply(myo_tpm,2,function(x)gsub('\\s+', '',x))
+class(mat) <- "numeric"
+# top 30 genes with the lowest padj
+mat = mat - rowMeans(mat) # Subtract the row means from each value
+
+cal_z_score <- function(x){
+  (x - mean(x)) / sd(x)
+}
+ 
+df = pheno %>%
+  dplyr::select(X6, X3, X4, X2) %>%
+  column_to_rownames(var = "X6") %>%
+  dplyr::rename("dev_stage" = X4, "tissue" = X3, "time" = X2)
+
+
+data_subset_norm <- t(apply(mat, 1, cal_z_score))
+data_subset_norm <- na.omit(data_subset_norm)
+library(pheatmap)
+library(RColorBrewer)
+cols <- colorRampPalette(brewer.pal(9, "Set1"))
+pheatmap(data_subset_norm, cellheight = 1, cellwidth = 2, annotation_col = df, cluster_cols = F, annotation_names_row = F,border_color=FALSE, show_rownames = F)
+
+
+```
