@@ -1,2 +1,2 @@
 # De novo genome assembly of the Tobacco Hornworm moth (Manduca sexta)
-Scripts used for including the genome assembly, genome polishing, repeat annotation, and genome assessments
+Scripts used for the genome assembly, genome polishing, repeat annotation, gene annotation and genome assessments
